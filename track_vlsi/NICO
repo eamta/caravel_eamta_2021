@@ -1,0 +1,7 @@
+Nico, aca creo q deberias poner todo lo relacionado a VLSI.
+
+Fijate el repo analogico como esta organizado. Por proyecto hay una carpeta sch y otra mag. Dentro de sch hay una carpeta simulations con un archivo .spiceinit (copia del top del repo, pero con el . adelante) 
+
+Ese spiceiniti acelera un poco la simulacion y configura un par de specs de ngspice. Todos los resultados de simulacion se guardan en sch/simulations automaticamente. Ya no hace falta aclarar en las directivas spice donde se escribe el .raw sino que solo el nombre.raw. Por default siempre se guarda como ascii, se puede cambiar a binario con unset filetype.
+
+En mag guardariamos los diseños de layout hasta q esten cerrados y verificados. Luego hay q copiarlos a la carpeta mag que esta en el top del repo. Ahi es donde se integran a caravel.
