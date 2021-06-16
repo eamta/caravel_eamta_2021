@@ -1,0 +1,21 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1623685265
+use opamp_1  opamp_1_0
+timestamp 1616103647
+transform 1 0 80957 0 1 18084
+box -1038 -23588 51308 2870
+use opamp  opamp_0
+timestamp 1619545672
+transform 1 0 15311 0 1 7158
+box -67 -10164 22905 1179
+use bias_circuit  bias_circuit_0
+timestamp 1623263513
+transform 1 0 38058 0 1 -23731
+box -4047 0 13401 14561
+use layout  layout_0
+timestamp 1621207460
+transform 1 0 45328 0 1 -3743
+box 2000 -80 26790 22100
+<< end >>
