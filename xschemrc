@@ -18,7 +18,7 @@ set XSCHEM_LIBRARY_PATH {}
 ### GENERAL PURPOSE LIB
 append XSCHEM_LIBRARY_PATH :${XSCHEM_SHAREDIR}/xschem_library
 ### EXAMPLES LIB
-append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/examples
+#append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/examples
 append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/ngspice
 append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/logic
 append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/xschem_simulator
