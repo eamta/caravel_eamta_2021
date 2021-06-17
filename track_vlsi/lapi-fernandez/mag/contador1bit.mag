@@ -1,0 +1,53 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1617974880
+<< metal1 >>
+rect 602 971 3554 1022
+rect 602 875 647 971
+rect 140 349 228 483
+rect 632 458 660 566
+rect 638 378 648 430
+rect 700 378 710 430
+rect 1564 390 1574 442
+rect 1626 390 1636 442
+rect 1676 417 1742 475
+rect 646 77 647 78
+rect 618 76 1648 77
+rect 618 49 3524 76
+<< via1 >>
+rect 648 378 700 430
+rect 1574 390 1626 442
+<< metal2 >>
+rect 3201 555 3253 607
+rect 1086 514 2027 542
+rect 1999 460 2027 514
+rect 1574 442 1626 452
+rect 648 430 700 440
+rect 700 390 1574 409
+rect 2834 409 2894 451
+rect 1626 390 2895 409
+rect 700 381 2895 390
+rect 1574 380 1626 381
+rect 648 368 700 378
+use xor  xor_0
+timestamp 1616195620
+transform 1 0 1001 0 1 201
+box -355 -124 647 821
+use and  and_0
+timestamp 1616195620
+transform -1 0 610 0 1 113
+box -36 -36 470 764
+use dffc2  dffc2_0
+timestamp 1616685081
+transform 1 0 2672 0 1 457
+box -1024 -425 882 565
+<< labels >>
+rlabel metal1 632 458 660 566 1 CE
+rlabel metal1 1676 417 1742 475 1 CLK
+rlabel metal2 3201 555 3253 607 1 CLR
+rlabel metal1 602 971 3554 1022 1 vdd
+rlabel metal1 646 49 3524 76 1 vss
+rlabel metal2 2834 393 2894 451 1 Q
+rlabel metal1 140 349 228 483 1 Sout
+<< end >>

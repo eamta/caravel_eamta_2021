@@ -1,0 +1,80 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1615579696
+<< nwell >>
+rect 2948 474 2978 978
+rect 2948 426 2976 474
+<< poly >>
+rect -72 1026 2996 1056
+rect -72 314 -42 1026
+rect 0 954 2924 984
+rect 0 464 30 954
+rect -72 278 2 314
+rect 2894 306 2924 954
+rect 2966 548 2996 1026
+rect 3442 635 3457 669
+rect 2966 496 3070 548
+rect 2880 298 2946 306
+rect 2780 290 2946 298
+rect 2780 268 2896 290
+rect 2880 256 2896 268
+rect 2930 256 2946 290
+rect 11 178 21 250
+rect 2880 240 2946 256
+rect 2942 132 2988 162
+rect 882 -6 912 82
+rect 1059 62 1119 78
+rect 1661 58 1721 74
+rect 0 -36 912 -6
+rect 2874 -78 2904 52
+rect 0 -108 2904 -78
+<< polycont >>
+rect 2896 256 2930 290
+<< locali >>
+rect 2880 256 2896 290
+rect 2930 256 2946 290
+<< viali >>
+rect 2896 256 2930 290
+<< metal1 >>
+rect 635 880 679 902
+rect 2948 854 2978 950
+rect 3351 644 3365 656
+rect 2880 298 2946 306
+rect 2878 246 2888 298
+rect 2940 246 2950 298
+rect 2880 240 2946 246
+rect 1431 50 1493 76
+rect 2946 0 2976 88
+<< via1 >>
+rect 2888 290 2940 298
+rect 2888 256 2896 290
+rect 2896 256 2930 290
+rect 2930 256 2940 290
+rect 2888 246 2940 256
+<< metal2 >>
+rect 2888 298 2940 308
+rect 2888 236 2940 246
+use and  and_0
+timestamp 1615571277
+transform 1 0 3016 0 1 66
+box -40 -66 441 912
+use flipflop  flipflop_0
+timestamp 1615568834
+transform 1 0 1568 0 1 72
+box -686 -72 1388 906
+use xor  xor_0
+timestamp 1615399768
+transform 1 0 28 0 1 72
+box -28 -72 864 906
+<< labels >>
+rlabel space -28 278 30 314 1 ce
+rlabel poly 2880 240 2946 306 1 Q
+rlabel space 3418 635 3457 669 1 out
+rlabel poly 1059 62 1119 78 1 clk
+rlabel poly 1661 58 1721 74 1 clr
+rlabel metal1 635 880 679 902 1 vdd
+rlabel poly 11 178 21 250 1 ce
+rlabel metal1 3351 644 3365 656 1 out
+rlabel metal1 1431 50 1493 76 1 vss
+<< end >>

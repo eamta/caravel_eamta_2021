@@ -1,0 +1,76 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1617828422
+<< nwell >>
+rect -36 442 182 808
+<< psubdiff >>
+rect 5 -62 29 -28
+rect 117 -62 141 -28
+<< nsubdiff >>
+rect 5 738 29 772
+rect 117 738 141 772
+<< psubdiffcont >>
+rect 29 -62 117 -28
+<< nsubdiffcont >>
+rect 29 738 117 772
+<< poly >>
+rect 58 317 88 478
+rect -25 269 88 317
+rect 58 142 88 269
+<< locali >>
+rect 13 738 29 772
+rect 117 738 133 772
+rect 13 -62 29 -28
+rect 117 -62 133 -28
+<< viali >>
+rect 29 738 117 772
+rect -25 269 23 317
+rect 29 -62 117 -28
+<< metal1 >>
+rect -36 772 182 778
+rect -36 738 29 772
+rect 117 738 182 772
+rect -36 732 182 738
+rect 6 684 52 732
+rect -37 319 35 323
+rect -37 267 -27 319
+rect 25 267 35 319
+rect -37 263 35 267
+rect 94 319 140 504
+rect 94 267 107 319
+rect 159 267 169 319
+rect 94 116 140 267
+rect 6 -22 52 26
+rect -36 -28 182 -22
+rect -36 -62 29 -28
+rect 117 -62 182 -28
+rect -36 -68 182 -62
+<< via1 >>
+rect -27 317 25 319
+rect -27 269 -25 317
+rect -25 269 23 317
+rect 23 269 25 317
+rect -27 267 25 269
+rect 107 267 159 319
+<< metal2 >>
+rect -45 319 25 329
+rect -45 267 -27 319
+rect -45 257 25 267
+rect 107 319 179 329
+rect 159 267 179 319
+rect 107 257 179 267
+use sky130_fd_pr__pfet_01v8_637R9P  sky130_fd_pr__pfet_01v8_637R9P_0
+timestamp 1617707798
+transform 1 0 73 0 1 594
+box -109 -152 109 152
+use sky130_fd_pr__nfet_01v8_NCV2PV  sky130_fd_pr__nfet_01v8_NCV2PV_0
+timestamp 1617707798
+transform 1 0 73 0 1 71
+box -73 -71 73 71
+<< labels >>
+rlabel metal2 -45 257 -27 329 3 A
+rlabel metal2 107 257 179 329 3 Z
+rlabel metal1 29 -62 117 -28 5 VSS
+rlabel nwell -36 733 182 778 1 VDD
+<< end >>

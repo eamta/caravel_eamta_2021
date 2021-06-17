@@ -1,0 +1,62 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1620951170
+<< metal1 >>
+rect 0 872 3964 910
+rect 0 -18 3964 20
+rect 0 -929 3964 -891
+rect 0 -1839 3964 -1801
+rect 0 -2730 3964 -2692
+<< metal2 >>
+rect 386 429 456 499
+rect 1788 448 1858 518
+rect 552 -206 622 383
+rect 2478 303 2548 373
+rect 3894 254 3964 324
+rect 386 -276 622 -206
+rect 386 -466 456 -276
+rect 3894 -324 3964 -254
+rect 552 -1251 622 -383
+rect 386 -1321 622 -1251
+rect 386 -1364 456 -1321
+rect 552 -2018 622 -1458
+rect 3894 -1566 3964 -1496
+rect 386 -2088 622 -2018
+rect 386 -2251 456 -2088
+rect 3894 -2144 3964 -2074
+use counter1b  counter1b_0
+timestamp 1620951170
+transform 1 0 1668 0 1 0
+box -1668 0 2296 910
+use counter1b  counter1b_1
+timestamp 1620951170
+transform 1 0 1668 0 -1 0
+box -1668 0 2296 910
+use counter1b  counter1b_2
+timestamp 1620951170
+transform 1 0 1668 0 1 -1820
+box -1668 0 2296 910
+use counter1b  counter1b_3
+timestamp 1620951170
+transform 1 0 1668 0 -1 -1820
+box -1668 0 2296 910
+<< labels >>
+rlabel metal2 420 429 420 429 5 CE
+rlabel metal1 0 -2710 0 -2710 7 VDD
+rlabel metal1 0 -1819 0 -1819 7 VSS
+rlabel metal1 0 -907 0 -907 7 VDD
+rlabel metal1 0 0 0 0 7 VSS
+rlabel metal1 0 891 0 891 7 VDD
+rlabel metal2 1823 448 1823 448 5 CLK
+rlabel metal2 2513 303 2513 303 5 CLR
+rlabel metal2 3929 254 3929 254 5 Q0
+rlabel metal2 3930 -1566 3930 -1566 5 Q2
+rlabel metal2 3929 -324 3929 -324 5 Q1
+rlabel metal2 3929 -2144 3929 -2144 5 Q3
+rlabel metal1 0 -2730 0 -2730 7 VDD
+rlabel metal1 0 -929 0 -929 7 VDD
+rlabel metal1 0 872 0 872 7 VDD
+rlabel metal1 0 -18 0 -18 7 VSS
+rlabel metal1 0 -1839 0 -1839 7 VSS
+<< end >>

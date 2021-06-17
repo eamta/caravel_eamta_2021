@@ -1,0 +1,130 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1620950905
+<< nwell >>
+rect -36 500 582 566
+rect -36 479 581 500
+rect 375 467 581 479
+rect -36 458 582 467
+rect 375 197 581 458
+<< psubdiff >>
+rect 33 -306 57 -272
+rect 517 -306 541 -272
+<< nsubdiff >>
+rect 5 494 57 528
+rect 488 494 541 528
+<< psubdiffcont >>
+rect 57 -306 517 -272
+<< nsubdiffcont >>
+rect 57 494 488 528
+<< poly >>
+rect 58 67 88 233
+rect 258 153 288 233
+rect 193 137 288 153
+rect 193 103 209 137
+rect 243 103 288 137
+rect 193 87 288 103
+rect 58 51 154 67
+rect 58 17 104 51
+rect 138 17 154 51
+rect 58 1 154 17
+rect 58 -12 88 1
+rect 258 -12 288 87
+rect 458 70 488 233
+rect 394 54 488 70
+rect 394 20 411 54
+rect 446 20 488 54
+rect 394 4 488 20
+rect 458 -102 488 4
+<< polycont >>
+rect 209 103 243 137
+rect 104 17 138 51
+rect 411 20 446 54
+<< locali >>
+rect 12 494 57 528
+rect 488 494 533 528
+rect 12 443 46 494
+rect 212 443 246 494
+rect 412 443 446 494
+rect 100 221 134 255
+rect 300 221 334 255
+rect 100 187 334 221
+rect 193 137 259 153
+rect 193 103 209 137
+rect 243 103 259 137
+rect 193 87 259 103
+rect 300 70 334 187
+rect 88 51 154 67
+rect 88 17 104 51
+rect 138 17 154 51
+rect 88 1 154 17
+rect 300 54 462 70
+rect 300 20 411 54
+rect 446 20 462 54
+rect 300 4 462 20
+rect 300 -34 334 4
+rect 134 -206 212 -50
+rect 500 -124 534 255
+rect 12 -272 46 -222
+rect 412 -272 446 -222
+rect 12 -306 57 -272
+rect 517 -306 533 -272
+<< viali >>
+rect 57 494 488 528
+rect 209 103 243 137
+rect 104 17 138 51
+rect 534 20 568 54
+rect 57 -306 488 -272
+<< metal1 >>
+rect -36 528 582 566
+rect -36 494 57 528
+rect 488 494 582 528
+rect -36 467 582 494
+rect 193 137 259 153
+rect 193 103 209 137
+rect 243 103 259 137
+rect 193 87 259 103
+rect 88 51 154 67
+rect 88 17 104 51
+rect 138 17 154 51
+rect 88 1 154 17
+rect 522 54 580 66
+rect 522 20 534 54
+rect 568 20 580 54
+rect 522 8 580 20
+rect -36 -272 582 -246
+rect -36 -306 57 -272
+rect 488 -306 582 -272
+rect -36 -344 582 -306
+use sky130_fd_pr__nfet_01v8_PEKVP3  sky130_fd_pr__nfet_01v8_PEKVP3_1
+timestamp 1620950803
+transform 1 0 273 0 1 -128
+box -73 -116 73 116
+use sky130_fd_pr__nfet_01v8_PEKVP3  sky130_fd_pr__nfet_01v8_PEKVP3_0
+timestamp 1620950803
+transform 1 0 73 0 1 -128
+box -73 -116 73 116
+use sky130_fd_pr__pfet_01v8_5AY9XA  sky130_fd_pr__pfet_01v8_5AY9XA_2
+timestamp 1620950905
+transform 1 0 473 0 1 349
+box -109 -152 109 152
+use sky130_fd_pr__nfet_01v8_J6HC3N  sky130_fd_pr__nfet_01v8_J6HC3N_0
+timestamp 1620950867
+transform 1 0 473 0 1 -173
+box -73 -71 73 71
+use sky130_fd_pr__pfet_01v8_5AY9XA  sky130_fd_pr__pfet_01v8_5AY9XA_1
+timestamp 1620950905
+transform 1 0 273 0 1 349
+box -109 -152 109 152
+use sky130_fd_pr__pfet_01v8_5AY9XA  sky130_fd_pr__pfet_01v8_5AY9XA_0
+timestamp 1620950905
+transform 1 0 73 0 1 349
+box -109 -152 109 152
+<< labels >>
+rlabel metal1 -36 -312 582 -306 5 VSS
+rlabel metal1 -36 528 582 534 1 VDD
+rlabel metal1 138 1 154 67 3 B
+rlabel metal1 193 87 209 153 7 A
+rlabel metal1 568 8 580 66 3 Z
+<< end >>

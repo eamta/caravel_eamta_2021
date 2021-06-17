@@ -1,0 +1,88 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1615856892
+<< metal1 >>
+rect 7647 1599 7703 1645
+rect 7675 46 7703 1599
+rect 7586 0 7703 46
+<< metal2 >>
+rect 355 1571 7727 1599
+rect 2267 1567 2335 1571
+rect 6031 1567 6099 1571
+rect 356 1418 7671 1446
+rect 3013 1291 3944 1319
+rect 4139 1291 7615 1319
+rect 947 1177 3606 1205
+rect 4247 1177 7370 1205
+rect 2104 947 3466 975
+rect 5859 947 7221 975
+rect 520 676 1882 704
+rect 4275 676 5637 704
+rect 371 446 3494 474
+rect 4135 446 7258 474
+rect 142 328 3602 356
+rect 3797 328 7313 356
+rect 7587 333 7615 1291
+rect 7643 233 7671 1418
+rect 116 205 7671 233
+rect 1642 74 1710 78
+rect 5406 74 5474 78
+rect 7699 74 7727 1571
+rect 1642 46 7727 74
+use dffc_2  dffc_2_3
+timestamp 1615854901
+transform -1 0 2989 0 -1 1622
+box -67 -23 2436 852
+use dffc_2  dffc_2_0
+timestamp 1615854901
+transform 1 0 988 0 1 23
+box -67 -23 2436 852
+use xor  xor_0
+timestamp 1615854844
+transform 1 0 96 0 1 23
+box -96 -23 990 852
+use dffc_2  dffc_2_2
+timestamp 1615854901
+transform -1 0 6753 0 -1 1622
+box -67 -23 2436 852
+use dffc_2  dffc_2_1
+timestamp 1615854901
+transform 1 0 4752 0 1 23
+box -67 -23 2436 852
+use xor  xor_3
+timestamp 1615854844
+transform -1 0 3881 0 -1 1622
+box -96 -23 990 852
+use xor  xor_1
+timestamp 1615854844
+transform 1 0 3860 0 1 23
+box -96 -23 990 852
+use and  and_2
+timestamp 1615854340
+transform -1 0 4358 0 -1 1622
+box -81 -23 584 852
+use and  and_0
+timestamp 1615854340
+transform 1 0 3383 0 1 23
+box -81 -23 584 852
+use xor  xor_2
+timestamp 1615854844
+transform -1 0 7645 0 -1 1622
+box -96 -23 990 852
+use and  and_1
+timestamp 1615854340
+transform 1 0 7147 0 1 23
+box -81 -23 584 852
+<< labels >>
+rlabel space 3797 279 3851 333 1 D0
+rlabel metal2 355 1571 434 1599 1 CLR
+rlabel metal2 356 1418 451 1446 1 CLK
+rlabel space 948 1191 1000 1246 1 D3
+rlabel space 4247 1163 4307 1223 1 D2
+rlabel space 6741 399 6793 454 1 D1
+rlabel space 2977 399 3029 454 1 D0
+rlabel space 111 805 163 841 1 vdd
+rlabel space 578 1602 623 1638 1 vss
+rlabel metal2 142 328 185 356 1 CE
+<< end >>

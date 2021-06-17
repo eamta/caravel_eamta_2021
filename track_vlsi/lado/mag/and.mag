@@ -1,0 +1,96 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1616191617
+<< nwell >>
+rect 0 336 624 608
+<< pwell >>
+rect 620 -638 622 -504
+<< psubdiff >>
+rect 144 -592 168 -510
+rect 442 -592 466 -510
+<< nsubdiff >>
+rect 134 476 488 516
+rect 134 420 170 476
+rect 444 420 488 476
+rect 134 388 488 420
+<< psubdiffcont >>
+rect 168 -592 442 -510
+<< nsubdiffcont >>
+rect 170 420 444 476
+<< poly >>
+rect 94 -34 124 90
+rect 292 -32 324 84
+rect 0 -94 124 -34
+rect 222 -92 324 -32
+rect 94 -170 124 -94
+rect 292 -170 324 -92
+rect 498 -150 530 84
+rect 480 -216 546 -150
+<< viali >>
+rect 68 476 578 546
+rect 68 420 170 476
+rect 170 420 444 476
+rect 444 420 578 476
+rect 68 362 578 420
+rect 92 -510 536 -496
+rect 92 -592 168 -510
+rect 168 -592 442 -510
+rect 442 -592 536 -510
+rect 92 -612 536 -592
+<< metal1 >>
+rect 0 546 624 608
+rect 0 362 68 546
+rect 578 362 624 546
+rect 0 338 624 362
+rect 0 336 336 338
+rect 370 336 624 338
+rect 48 100 82 336
+rect 132 20 168 278
+rect 248 170 280 336
+rect 248 112 284 170
+rect 248 108 280 112
+rect 334 20 374 264
+rect 454 96 486 336
+rect 580 224 612 226
+rect 538 162 612 224
+rect 132 12 532 20
+rect 132 -32 534 12
+rect 578 -22 612 162
+rect 158 -328 260 -220
+rect 42 -464 82 -334
+rect 334 -368 374 -32
+rect 492 -150 534 -32
+rect 480 -206 546 -150
+rect 580 -258 612 -22
+rect 452 -464 486 -258
+rect 540 -320 612 -258
+rect 2 -496 622 -464
+rect 2 -612 92 -496
+rect 536 -612 622 -496
+rect 2 -636 622 -612
+use sky130_fd_pr__nfet_01v8_P8KVP3  sky130_fd_pr__nfet_01v8_P8KVP3_0
+timestamp 1615945791
+transform 1 0 109 0 1 -280
+box -73 -116 73 116
+use sky130_fd_pr__nfet_01v8_P8KVP3  sky130_fd_pr__nfet_01v8_P8KVP3_1
+timestamp 1615945791
+transform 1 0 309 0 1 -276
+box -73 -116 73 116
+use sky130_fd_pr__nfet_01v8_J83WCX  sky130_fd_pr__nfet_01v8_J83WCX_0
+timestamp 1615945791
+transform 1 0 513 0 1 -252
+box -73 -102 73 102
+use sky130_fd_pr__pfet_01v8_BHXHFC  sky130_fd_pr__pfet_01v8_BHXHFC_0
+timestamp 1615945791
+transform 1 0 109 0 1 154
+box -109 -154 109 188
+use sky130_fd_pr__pfet_01v8_BHXHFC  sky130_fd_pr__pfet_01v8_BHXHFC_1
+timestamp 1615945791
+transform 1 0 309 0 1 154
+box -109 -154 109 188
+use sky130_fd_pr__pfet_01v8_BHXHFC  sky130_fd_pr__pfet_01v8_BHXHFC_2
+timestamp 1615945791
+transform 1 0 513 0 1 154
+box -109 -154 109 188
+<< end >>

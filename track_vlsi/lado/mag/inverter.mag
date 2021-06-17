@@ -1,0 +1,19 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1615959208
+use sky130_fd_pr__nfet_01v8_A4WUDG  sky130_fd_pr__nfet_01v8_A4WUDG_0
+timestamp 1614788003
+transform 1 0 0 0 1 413
+box -211 -224 211 224
+use sky130_fd_pr__pfet_01v8_7KP3BC  sky130_fd_pr__pfet_01v8_7KP3BC_0
+timestamp 1614788003
+transform 1 0 3 0 1 1034
+box -211 -334 211 334
+<< labels >>
+rlabel space -208 662 -26 704 1 in
+rlabel space -208 662 -26 704 1 vin
+rlabel space 138 666 216 706 1 vout
+rlabel space -176 82 -152 134 1 vss
+rlabel space -120 1402 150 1466 1 vdd
+<< end >>
