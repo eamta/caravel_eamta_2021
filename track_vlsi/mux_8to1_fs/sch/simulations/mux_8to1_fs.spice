@@ -1,0 +1,52 @@
+**.subckt mux_8to1_fs reg2 reg1 reg0 out_mux avdd1p8 avss1p8 mux_i7 mux_i6 mux_i5 mux_i4 mux_i3
+*+ mux_i2 mux_i1 mux_i0
+*.ipin reg2
+*.ipin reg1
+*.ipin reg0
+*.opin out_mux
+*.iopin avdd1p8
+*.iopin avss1p8
+*.ipin mux_i7
+*.ipin mux_i6
+*.ipin mux_i5
+*.ipin mux_i4
+*.ipin mux_i3
+*.ipin mux_i2
+*.ipin mux_i1
+*.ipin mux_i0
+x1 avdd1p8 reg2 avss1p8 mux_i3 net1 mux_i2 mux_2to1_logic
+x2 avdd1p8 reg2 avss1p8 mux_i1 net2 mux_i0 mux_2to1_logic
+x3 avdd1p8 reg1 avss1p8 net1 net3 net2 mux_2to1_logic
+x5 avdd1p8 reg2 avss1p8 mux_i7 net4 mux_i6 mux_2to1_logic
+x6 avdd1p8 reg2 avss1p8 mux_i5 net5 mux_i4 mux_2to1_logic
+x7 avdd1p8 reg1 avss1p8 net4 net6 net5 mux_2to1_logic
+x8 avdd1p8 reg0 avss1p8 net6 out_mux net3 mux_2to1_logic
+**.ends
+
+* expanding   symbol:  mux_2to1_logic.sym # of pins=6
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/mux_8to1_fs/sch/mux_2to1_logic.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/mux_8to1_fs/sch/mux_2to1_logic.sch
+.subckt mux_2to1_logic  avdd1p8 sel avss1p8 DinB out DinA
+*.ipin DinB
+*.ipin DinA
+*.iopin avdd1p8
+*.iopin avss1p8
+*.ipin sel
+*.opin out
+XM5 out sel_b DinB avdd1p8 sky130_fd_pr__pfet_01v8 L=0.15 W=2.22 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM6 DinB sel out avss1p8 sky130_fd_pr__nfet_01v8 L=0.15 W=1.11 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 out sel DinA avdd1p8 sky130_fd_pr__pfet_01v8 L=0.15 W=2.22 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+XM7 DinA sel_b out avss1p8 sky130_fd_pr__nfet_01v8 L=0.15 W=1.11 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1 
+*  x1 -  inverter_min  IS MISSING !!!!
+.ends
+
+** flattened .save nodes
+.end

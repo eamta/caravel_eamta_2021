@@ -28,7 +28,7 @@ append XSCHEM_LIBRARY_PATH :/usr/local/share/doc/xschem/rom8k
 ### SKY130 PDK SYMBOLS LIB
 append XSCHEM_LIBRARY_PATH :~/skywater/xschem_sky130
 ### USERs CELLS LIB
-append XSCHEM_LIBRARY_PATH :~/sky130-mpw2-fulgor
+#append XSCHEM_LIBRARY_PATH :~/sky130-mpw2-fulgor
 ### CURRENT CELL LIB
 append XSCHEM_LIBRARY_PATH :$env(PWD)
 
