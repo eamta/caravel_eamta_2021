@@ -1,0 +1,35 @@
+* NGSPICE file created from xor.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_H7KMG3 VSUBS a_n15_n147# a_15_n121# a_n73_n121#
+X0 a_15_n121# a_n15_n147# a_n73_n121# VSUBS sky130_fd_pr__nfet_01v8 ad=2.61e+11p pd=2.38e+06u as=2.61e+11p ps=2.38e+06u w=900000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_5AY9XA VSUBS a_n15_n116# a_n73_n90# w_n109_n152# a_15_n90#
+X0 a_15_n90# a_n15_n116# a_n73_n90# w_n109_n152# sky130_fd_pr__pfet_01v8 ad=2.61e+11p pd=2.38e+06u as=2.61e+11p ps=2.38e+06u w=900000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_J83WCX VSUBS a_n73_n76# a_n15_n102# a_15_n76#
+X0 a_15_n76# a_n15_n102# a_n73_n76# VSUBS sky130_fd_pr__nfet_01v8 ad=1.305e+11p pd=1.48e+06u as=1.305e+11p ps=1.48e+06u w=450000u l=150000u
+.ends
+
+
+* Top level circuit xor
+
+Xsky130_fd_pr__nfet_01v8_H7KMG3_0 vss in1 sky130_fd_pr__nfet_01v8_H7KMG3_0/a_15_n121#
++ vss sky130_fd_pr__nfet_01v8_H7KMG3
+Xsky130_fd_pr__pfet_01v8_5AY9XA_0 vss in1 vdd vdd a_180_358# sky130_fd_pr__pfet_01v8_5AY9XA
+Xsky130_fd_pr__nfet_01v8_H7KMG3_1 vss in2 out sky130_fd_pr__nfet_01v8_H7KMG3_0/a_15_n121#
++ sky130_fd_pr__nfet_01v8_H7KMG3
+Xsky130_fd_pr__pfet_01v8_5AY9XA_1 vss in1 vdd vdd m1_318_680# sky130_fd_pr__pfet_01v8_5AY9XA
+Xsky130_fd_pr__nfet_01v8_H7KMG3_2 vss a_180_358# sky130_fd_pr__nfet_01v8_H7KMG3_2/a_15_n121#
++ out sky130_fd_pr__nfet_01v8_H7KMG3
+Xsky130_fd_pr__pfet_01v8_5AY9XA_2 vss a_180_358# m1_318_680# vdd out sky130_fd_pr__pfet_01v8_5AY9XA
+Xsky130_fd_pr__nfet_01v8_H7KMG3_3 vss a_452_402# vss sky130_fd_pr__nfet_01v8_H7KMG3_2/a_15_n121#
++ sky130_fd_pr__nfet_01v8_H7KMG3
+Xsky130_fd_pr__pfet_01v8_5AY9XA_3 vss a_452_402# out vdd m1_318_680# sky130_fd_pr__pfet_01v8_5AY9XA
+Xsky130_fd_pr__pfet_01v8_5AY9XA_4 vss in2 m1_318_680# vdd vdd sky130_fd_pr__pfet_01v8_5AY9XA
+Xsky130_fd_pr__pfet_01v8_5AY9XA_5 vss in2 a_452_402# vdd vdd sky130_fd_pr__pfet_01v8_5AY9XA
+Xsky130_fd_pr__nfet_01v8_J83WCX_0 vss vss in1 a_180_358# sky130_fd_pr__nfet_01v8_J83WCX
+Xsky130_fd_pr__nfet_01v8_J83WCX_1 vss a_452_402# in2 vss sky130_fd_pr__nfet_01v8_J83WCX
+.end
+

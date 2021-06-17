@@ -1,0 +1,56 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1616102052
+<< nwell >>
+rect -84 -2 296 458
+<< pwell >>
+rect -84 -364 294 -120
+<< psubdiff >>
+rect -40 -342 -16 -280
+rect 228 -342 252 -280
+<< nsubdiff >>
+rect -14 384 242 412
+rect -14 346 26 384
+rect 208 346 242 384
+rect -14 316 242 346
+<< psubdiffcont >>
+rect -16 -342 228 -280
+<< nsubdiffcont >>
+rect 26 346 208 384
+<< poly >>
+rect 94 -122 124 48
+<< viali >>
+rect -56 384 268 424
+rect -56 346 26 384
+rect 26 346 208 384
+rect 208 346 268 384
+rect -56 310 268 346
+rect -66 -280 276 -268
+rect -66 -342 -16 -280
+rect -16 -342 228 -280
+rect 228 -342 276 -280
+rect -66 -352 276 -342
+<< metal1 >>
+rect -84 424 296 458
+rect -84 310 -56 424
+rect 268 310 296 424
+rect -84 296 296 310
+rect 44 64 84 296
+rect 134 -34 172 104
+rect 134 -66 296 -34
+rect 44 -262 84 -186
+rect 134 -224 172 -66
+rect -84 -268 294 -262
+rect -84 -352 -66 -268
+rect 276 -352 294 -268
+rect -84 -364 294 -352
+use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_0
+timestamp 1615953154
+transform 1 0 109 0 1 -177
+box -73 -71 73 71
+use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_0
+timestamp 1615952639
+transform 1 0 109 0 1 152
+box -109 -152 109 152
+<< end >>

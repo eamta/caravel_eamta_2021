@@ -1,0 +1,14 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1615566114
+<< error_p >>
+rect 48 236 60 242
+rect 70 236 82 242
+rect 36 218 42 230
+rect 88 218 94 230
+use contacto_chico_1_ok  contacto_chico_1_ok_0
+timestamp 1615566114
+transform 1 0 109 0 1 152
+box -109 -152 109 134
+<< end >>

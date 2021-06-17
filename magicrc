@@ -16,10 +16,6 @@ catch {random seed}
 
 # Allow override of PDK path from environment variable PDKPATH
 if {[catch {set PDKPATH $env(PDKPATH)}]} {
-<<<<<<< HEAD
-=======
-#    set PDKPATH "/home/eamta/skywater/pdk/skywater130/sky130A"
->>>>>>> 89809751fdedf4cd346b2808e31618975a17ff28
     set PDKPATH "~/skywater/pdk/skywater130/sky130A"
 }
 

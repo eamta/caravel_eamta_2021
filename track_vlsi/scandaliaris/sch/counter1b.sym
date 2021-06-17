@@ -1,0 +1,31 @@
+v {xschem version=2.9.9 file_version=1.2 }
+G {}
+K {type=subcircuit
+format="@name @pinlist @VSS @VDD @symname"
+template="name=xCOUNTER1B VSS=VSS VDD=VDD"
+extra="VSS VDD"
+}
+V {}
+S {}
+E {}
+L 4 -130 -30 130 -30 {}
+L 4 -130 30 130 30 {}
+L 4 -130 -30 -130 30 {}
+L 4 130 -30 130 30 {}
+L 4 130 -20 150 -20 {}
+L 4 -150 -20 -130 -20 {}
+L 4 -150 0 -130 0 {}
+L 4 -150 20 -130 20 {}
+L 4 130 0 150 0 {}
+B 5 147.5 -22.5 152.5 -17.5 {name=Dn dir=out }
+B 5 -152.5 -22.5 -147.5 -17.5 {name=CE dir=in }
+B 5 -152.5 -2.5 -147.5 2.5 {name=CLR dir=in }
+B 5 -152.5 17.5 -147.5 22.5 {name=CLK dir=in }
+B 5 147.5 -2.5 152.5 2.5 {name=Sout dir=out }
+T {@symname} -58.5 -6 0 0 0.3 0.3 {}
+T {@name} 135 -42 0 0 0.2 0.2 {}
+T {Dn} 125 -24 0 1 0.2 0.2 {}
+T {CE} -125 -24 0 0 0.2 0.2 {}
+T {CLR} -125 -4 0 0 0.2 0.2 {}
+T {CLK} -125 16 0 0 0.2 0.2 {}
+T {Sout} 125 -4 0 1 0.2 0.2 {}

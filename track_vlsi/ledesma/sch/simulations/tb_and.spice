@@ -1,0 +1,90 @@
+**.subckt tb_and
+V1 vss GND 0
+V2 vdd vss 1.8
+V3 va vss PULSE(0 {Va} 1ps 1ps 1ps 50ns 100ns) DC{Va} 
+V4 vb vss PULSE(0 {Vb} 1ps 1ps 1ps 100ns 200ns) DC{Vb} 
+x3 vdd __UNCONNECTED_PIN__0 out vss inverter
+x1 vdd va vb out vss and1
+**** begin user architecture code
+
+
+
+* Parametros del circuito
+.param Va=1.8
+.param Vb=1.8
+.options TEMP = 27.0
+
+* Include
+.lib /home/eamta/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/corners/sky130.lib TT
+
+* Signals to SAVE
+.save all  @M.X1.XM1.msky130_fd_pr__nfet_01v8[id] @M.X1.XM1.msky130_fd_pr__nfet_01v8[gm]  @M.X1.XM2.msky130_fd_pr__pfet_01v8[id] @M.X1.XM2.msky130_fd_pr__pfet_01v8[gm]
+
+*simulation
+.control
+  tran 1p 200ns
+  setplot tran1
+  plot v(out) v(Va)+1.8 V(Vb)+3.6
+  write tb_and_tran.raw
+
+  reset
+  dc V3 0 1.8 0.01
+  setplot dc1
+  plot v(out) v(Va)
+  write tb_inverter_dc.ra
+
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  inverter.sym # of pins=4
+* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/ledesma/sch/inverter.sym
+* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/ledesma/sch/inverter.sch
+.subckt inverter  vdd out in vss
+*.opin out
+*.ipin in
+*.ipin vdd
+*.ipin vss
+XM1 out in vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 out in vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+
+* expanding   symbol:  and1.sym # of pins=5
+* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/ledesma/sch/and1.sym
+* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/ledesma/sch/and1.sch
+.subckt and1  vdd A B out vss
+*.opin out
+*.ipin vdd
+*.ipin A
+*.ipin B
+*.ipin vss
+XM1 net1 B vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 net2 B vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 net2 A net1 vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 net2 A vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM5 out net2 vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM6 out net2 vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+.GLOBAL GND
+** flattened .save nodes
+.end
