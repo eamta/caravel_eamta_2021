@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1621207460
+timestamp 1623888255
 << metal1 >>
 rect 4000 21800 22400 22100
 rect 4000 21500 20440 21800
@@ -103,18 +103,18 @@ rect 20949 10760 21331 10761
 rect 20949 10230 20950 10760
 rect 21330 10230 21331 10760
 rect 20949 10229 21331 10230
-use mirror  mirror_0
-timestamp 1619550847
-transform 1 0 4040 0 1 12065
-box -40 -65 18300 9043
+use output  output_0
+timestamp 1623888255
+transform 1 0 23490 0 1 6790
+box -11490 -6930 3757 4990
 use input  input_0
 timestamp 1619394249
 transform 1 0 3626 0 1 410
 box -1626 -410 7400 10510
-use output  output_0
-timestamp 1619566814
-transform 1 0 23490 0 1 6790
-box -11490 -6790 3299 4990
+use mirror  mirror_0
+timestamp 1619550847
+transform 1 0 4040 0 1 12065
+box -40 -65 18300 9043
 << labels >>
 rlabel metal2 11090 260 11480 10940 1 vss
 rlabel metal1 2720 10810 3530 10910 1 vin_p
