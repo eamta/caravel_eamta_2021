@@ -1,0 +1,25 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1616023926
+<< nwell >>
+rect -182 -122 2368 2112
+<< metal1 >>
+rect 97 179 131 1744
+rect 295 126 329 1555
+rect 493 167 527 1744
+rect 691 126 725 1567
+rect 889 167 923 1744
+rect 1087 126 1121 1567
+rect 1285 167 1319 1744
+rect 1483 126 1517 1567
+rect 1681 167 1715 1744
+rect 1879 126 1913 1567
+rect 2077 167 2111 1744
+rect 143 80 2065 126
+rect 951 -156 1257 80
+use sky130_fd_pr__pfet_01v8_DDDKZT  sky130_fd_pr__pfet_01v8_DDDKZT_0
+timestamp 1615898364
+transform 1 0 1104 0 1 831
+box -1157 -884 1157 884
+<< end >>
