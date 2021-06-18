@@ -1,0 +1,41 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1624053917
+use mux_8to1  mux_8to1_0
+timestamp 1624053917
+transform 1 0 7002 0 1 -7330
+box -208 0 11816 4170
+use mux_8to1  mux_8to1_1
+timestamp 1624053917
+transform 1 0 7020 0 1 -12768
+box -208 0 11816 4170
+use mux_8to1  mux_8to1_2
+timestamp 1624053917
+transform 1 0 6958 0 1 -18232
+box -208 0 11816 4170
+use mux_8to1  mux_8to1_3
+timestamp 1624053917
+transform 1 0 6936 0 1 -23698
+box -208 0 11816 4170
+use 4bitc  4bitc_0
+timestamp 1624053917
+transform 1 0 -12149 0 1 -3812
+box -107 -5600 10411 3700
+use contador4bits  contador4bits_0
+timestamp 1624053917
+transform 1 0 -9917 0 1 6632
+box -1875 -4708 15531 6688
+use c4b  c4b_0
+timestamp 1624053917
+transform 1 0 -12178 0 1 -17750
+box -120 -6160 17189 6856
+use counter4b  counter4b_0
+timestamp 1624053917
+transform 1 0 -12451 0 1 -28900
+box -141 -5420 21744 3600
+use contador  contador_0
+timestamp 1624053917
+transform 1 0 -12061 0 1 -39095
+box -547 -5577 9361 3622
+<< end >>

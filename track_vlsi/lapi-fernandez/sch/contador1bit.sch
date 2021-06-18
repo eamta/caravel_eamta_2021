@@ -37,8 +37,8 @@ N 40 140 50 140 { lab=CE}
 N 50 100 50 140 { lab=CE}
 N 50 100 60 100 { lab=CE}
 N 370 70 390 70 { lab=Q}
-C {/home/eamta/eamta2021/sch/and/and.sym} -110 70 0 1 {name=x1}
-C {/home/eamta/eamta2021/sch/xor/xor.sym} 210 60 0 0 {name=x2}
+C {and.sym} -110 70 0 1 {name=x1}
+C {xor.sym} 210 60 0 0 {name=x2}
 C {opin.sym} -100 70 2 0 {name=p1 lab=Sout}
 C {ipin.sym} 40 140 0 0 {name=p2 lab=CE}
 C {ipin.sym} 230 130 0 0 {name=p3 lab=CLR}
