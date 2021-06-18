@@ -1,0 +1,32 @@
+**.subckt opamp_lucas vdd vss vin_n vin_p iref vout
+*.iopin vdd
+*.iopin vss
+*.ipin vin_n
+*.ipin vin_p
+*.ipin iref
+*.opin vout
+XM3 net3 net3 vss vss sky130_fd_pr__nfet_01v8 L=0.7 W=7.7 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4 
+XM5 net2 iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.7 W=7 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=45 m=45 
+XM7 vout iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.7 W=7 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=504 m=504 
+XM8 iref iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.7 W=7 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=10 m=10 
+XM6 vout net1 vss vss sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=300 m=300 
+XM1 net3 vin_n net2 net2 sky130_fd_pr__pfet_01v8_lvt L=0.4 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=200 m=200 
+XM2 net1 vin_p net2 net2 sky130_fd_pr__pfet_01v8_lvt L=0.4 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=200 m=200 
+XM9 net4 vdd net1 vss sky130_fd_pr__nfet_01v8 L=0.3 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=25 m=25 
+XC1 vout net4 sky130_fd_pr__cap_mim_m3_1 W=24 L=24 MF=4 m=4
+XM4 net1 net3 vss vss sky130_fd_pr__nfet_01v8 L=0.7 W=7.7 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4 
+**.ends
+** flattened .save nodes
+.end
