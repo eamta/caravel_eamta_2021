@@ -1,0 +1,33 @@
+**.subckt opamp_ramiro vdd vss vin_n vin_p iref vout
+*.iopin vdd
+*.iopin vss
+*.ipin vin_n
+*.ipin vin_p
+*.ipin iref
+*.opin vout
+XM3 vbn vbn vss vss sky130_fd_pr__nfet_01v8 L=0.45 W=4.2 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4 
+XM4 voe1 vbn vss vss sky130_fd_pr__nfet_01v8 L=0.45 W=4.2 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4 
+XM5 vp iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.45 W=5.4 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=140 m=140 
+XM7 vout iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.45 W=5.4 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=420 m=420 
+XM8 iref iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.45 W=5.4 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=20 m=20 
+XM6 vout voe1 vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=1.95 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=240 m=240 
+XM1 vbn vin_n vp vp sky130_fd_pr__pfet_01v8_lvt L=1.2 W=7.35 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=40 m=40 
+XM2 voe1 vin_p vp vp sky130_fd_pr__pfet_01v8_lvt L=1.2 W=7.35 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=40 m=40 
+XM9 net1 vdd voe1 vss sky130_fd_pr__nfet_01v8 L=1.8 W=1.5 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=100 m=100 
+XM10 vdd iref vdd vdd sky130_fd_pr__pfet_01v8 L=0.45 W=5.4 nf=1 ad='W * 0.29' as='W * 0.29' pd='2 * (W + 0.29)'
++ ps='2 * (W + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=20 m=20 
+XC2 vout net1 sky130_fd_pr__cap_mim_m3_1 W=15 L=15 MF=9 m=9
+**.ends
+** flattened .save nodes
+.end

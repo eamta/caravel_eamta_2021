@@ -86,14 +86,14 @@ N 1740 -190 1740 -90 { lab=vss}
 N 1740 -230 1810 -230 { lab=vdd}
 N 1860 -190 1890 -190 { lab=vout}
 N 1670 -190 1710 -190 { lab=voe1}
-N 1870 -590 1940 -590 { lab=#net1}
-N 1940 -590 1940 -560 { lab=#net1}
-N 1870 -560 1940 -560 { lab=#net1}
-N 1870 -530 1960 -530 { lab=#net1}
-N 1960 -560 1960 -530 { lab=#net1}
-N 1940 -560 1960 -560 { lab=#net1}
+N 1870 -590 1940 -590 { lab=vdd}
+N 1940 -590 1940 -560 { lab=vdd}
+N 1870 -560 1940 -560 { lab=vdd}
+N 1870 -530 1960 -530 { lab=vdd}
+N 1960 -560 1960 -530 { lab=vdd}
+N 1940 -560 1960 -560 { lab=vdd}
 N 1790 -560 1830 -560 { lab=iref}
-N 1790 -590 1870 -590 { lab=#net1}
+N 1790 -590 1870 -590 { lab=vdd}
 C {sky130_fd_pr/nfet_01v8.sym} 1310 -65 0 1 {name=M3
 L=0.45
 W=4.2
@@ -227,11 +227,6 @@ C {lab_wire.sym} 1740 -122.5 3 0 {name=l9 sig_type=std_logic lab=vss
 }
 C {lab_wire.sym} 1792.5 -230 0 0 {name=l10 sig_type=std_logic lab=vdd
 }
-C {sky130_fd_pr/cap_mim_m3_2.sym} 1830 -190 1 0 {name=C1
-model=cap_mim_m3_2
-W=45 L=45
-MF=1
-spiceprefix=X}
 C {sky130_fd_pr/pfet_01v8.sym} 1850 -560 0 0 {name=M10
 L=0.45
 W=5.4
@@ -246,3 +241,4 @@ spiceprefix=X
 }
 C {lab_pin.sym} 1790 -560 0 0 {name=l11 sig_type=std_logic lab=iref}
 C {lab_pin.sym} 1790 -590 0 0 {name=l12 sig_type=std_logic lab=vdd}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1830 -190 1 0 {name=C2 model=cap_mim_m3_1 W=15 L=15 MF=9 spiceprefix=X}

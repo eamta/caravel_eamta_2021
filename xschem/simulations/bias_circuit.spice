@@ -1,0 +1,60 @@
+**.subckt bias_circuit ibias_2 vss ibias_1 ibias_3 vdd vref
+*.iopin ibias_2
+*.iopin vss
+*.iopin ibias_1
+*.iopin ibias_3
+*.iopin vdd
+*.iopin vref
+x2 vdd vbias_1 vref ibias_1 vss bias
+x1 vdd vbias_1 vref bias_reference
+x4 vdd vbias_1 vref ibias_2 vss bias
+x6 vdd vbias_1 vref ibias_3 vss bias
+**.ends
+
+* expanding   symbol:  bias.sym # of pins=5
+* sym_path: /home/eamta/caravel_eamta_2021/xschem/bias.sym
+* sch_path: /home/eamta/caravel_eamta_2021/xschem/bias.sch
+.subckt bias  vdd vbias_1 vbias_2 ibias vss
+*.iopin vdd
+*.iopin vss
+*.opin ibias
+*.ipin vbias_1
+*.ipin vbias_2
+XM1 ibias net2 net3 vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=200 m=200 
+XM2 net3 net1 vss vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=250 m=250 
+XM3 net2 net2 net1 vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=120 m=120 
+XM4 net1 net1 vss vss sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=250 m=250 
+XM5 net2 vbias_2 net4 net4 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=105 m=105 
+XM6 net4 vbias_1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=290 m=290 
+.ends
+
+
+* expanding   symbol:  bias_reference.sym # of pins=3
+* sym_path: /home/eamta/caravel_eamta_2021/xschem/bias_reference.sym
+* sch_path: /home/eamta/caravel_eamta_2021/xschem/bias_reference.sch
+.subckt bias_reference  vdd vbias_1 iref
+*.ipin iref
+*.opin vbias_1
+*.iopin vdd
+XM7 iref iref vbias_1 vbias_1 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=150 m=150 
+XM8 vbias_1 vbias_1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=290 m=290 
+.ends
+
+** flattened .save nodes
+.end
