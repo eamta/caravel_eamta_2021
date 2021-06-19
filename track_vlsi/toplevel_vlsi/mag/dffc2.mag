@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1616685081
+timestamp 1624067212
 << nwell >>
 rect -1024 198 882 565
 rect -1024 179 -817 198
@@ -199,7 +199,23 @@ rect -673 -10 -601 0
 rect 161 -11 223 -1
 rect 161 -63 171 -11
 rect 161 -73 223 -63
-use contacto  contacto_0 
+use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_5
+timestamp 1615600491
+transform 1 0 -827 0 1 -195
+box -73 -71 73 71
+use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_4
+timestamp 1615600491
+transform 1 0 -915 0 1 -195
+box -73 -71 73 71
+use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_0
+timestamp 1615600491
+transform 1 0 -915 0 1 286
+box -109 -152 109 152
+use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_1
+timestamp 1615600491
+transform 1 0 -827 0 1 286
+box -109 -152 109 152
+use contacto  contacto_0
 timestamp 1616018980
 transform 1 0 -996 0 1 -44
 box 0 4 66 62
@@ -207,37 +223,29 @@ use contacto  contacto_1
 timestamp 1616018980
 transform 1 0 -858 0 1 -47
 box 0 4 66 62
-use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_5
-timestamp 1615298455
-transform 1 0 -827 0 1 -195
+use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_6
+timestamp 1615600491
+transform 1 0 -591 0 1 -94
 box -73 -71 73 71
-use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_4
-timestamp 1615298455
-transform 1 0 -915 0 1 -195
-box -73 -71 73 71
-use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_0 
-timestamp 1614978561
-transform 1 0 -915 0 1 286
+use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_3
+timestamp 1615600491
+transform 1 0 -591 0 1 251
 box -109 -152 109 152
-use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_1
-timestamp 1614978561
-transform 1 0 -827 0 1 286
+use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_2
+timestamp 1615600491
+transform 1 0 -503 0 1 251
 box -109 -152 109 152
 use contacto  contacto_2
 timestamp 1616018980
 transform 0 -1 -714 1 0 55
 box 0 4 66 62
-use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_6
-timestamp 1615298455
-transform 1 0 -591 0 1 -94
+use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_7
+timestamp 1615600491
+transform 1 0 -503 0 1 -94
 box -73 -71 73 71
-use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_3
-timestamp 1614978561
-transform 1 0 -591 0 1 251
-box -109 -152 109 152
-use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_2
-timestamp 1614978561
-transform 1 0 -503 0 1 251
+use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_6
+timestamp 1615600491
+transform 1 0 -285 0 1 251
 box -109 -152 109 152
 use contacto  contacto_3
 timestamp 1616018980
@@ -247,46 +255,46 @@ use contacto  contacto_9
 timestamp 1616018980
 transform -1 0 -360 0 -1 -273
 box 0 4 66 62
-use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_7
-timestamp 1615298455
-transform 1 0 -503 0 1 -94
-box -73 -71 73 71
-use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_6
-timestamp 1614978561
-transform 1 0 -285 0 1 251
-box -109 -152 109 152
 use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_8
-timestamp 1615298455
+timestamp 1615600491
 transform 1 0 -285 0 1 -74
 box -73 -71 73 71
 use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_11
-timestamp 1615298455
+timestamp 1615600491
 transform 1 0 -109 0 1 -74
 box -73 -71 73 71
 use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_9
-timestamp 1615298455
+timestamp 1615600491
 transform 1 0 -197 0 1 -74
 box -73 -71 73 71
 use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_5
-timestamp 1614978561
+timestamp 1615600491
 transform 1 0 -197 0 1 251
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_4
-timestamp 1614978561
+timestamp 1615600491
 transform 1 0 -109 0 1 251
+box -109 -152 109 152
+use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_10
+timestamp 1615600491
+transform 1 0 115 0 1 -144
+box -73 -71 73 71
+use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_7
+timestamp 1615600491
+transform 1 0 115 0 1 254
 box -109 -152 109 152
 use contacto  contacto_4
 timestamp 1616018980
 transform 1 0 -52 0 1 388
 box 0 4 66 62
-use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_10
-timestamp 1615298455
-transform 1 0 115 0 1 -144
+use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_0
+timestamp 1615600491
+transform 1 0 340 0 1 -159
 box -73 -71 73 71
-use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_7
-timestamp 1614978561
-transform 1 0 115 0 1 254
-box -109 -152 109 152
+use sky130_fd_pr__pfet_01v8_5CNMEE  sky130_fd_pr__pfet_01v8_5CNMEE_0
+timestamp 1615600491
+transform 1 0 340 0 1 196
+box -109 -242 109 242
 use contacto  contacto_8
 timestamp 1616018980
 transform -1 0 233 0 -1 -230
@@ -295,28 +303,28 @@ use contacto  contacto_5
 timestamp 1616018980
 transform 1 0 127 0 1 67
 box 0 4 66 62
-use sky130_fd_pr__pfet_01v8_5CNMEE  sky130_fd_pr__pfet_01v8_5CNMEE_0
-timestamp 1616024263
-transform 1 0 340 0 1 196
-box -109 -242 109 242
-use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_0
-timestamp 1615298455
-transform 1 0 340 0 1 -159
-box -73 -71 73 71
-use sky130_fd_pr__pfet_01v8_5CNMEE  sky130_fd_pr__pfet_01v8_5CNMEE_1
-timestamp 1616024263
-transform 1 0 428 0 1 196
-box -109 -242 109 242
 use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_1
-timestamp 1615298455
+timestamp 1615600491
 transform 1 0 428 0 1 -159
 box -73 -71 73 71
+use sky130_fd_pr__pfet_01v8_5CNMEE  sky130_fd_pr__pfet_01v8_5CNMEE_1
+timestamp 1615600491
+transform 1 0 428 0 1 196
+box -109 -242 109 242
+use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_2
+timestamp 1615600491
+transform 1 0 773 0 1 -159
+box -73 -71 73 71
+use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_3
+timestamp 1615600491
+transform 1 0 685 0 1 -159
+box -73 -71 73 71
 use sky130_fd_pr__pfet_01v8_5CNMEE  sky130_fd_pr__pfet_01v8_5CNMEE_3
-timestamp 1616024263
+timestamp 1615600491
 transform 1 0 685 0 1 196
 box -109 -242 109 242
 use sky130_fd_pr__pfet_01v8_5CNMEE  sky130_fd_pr__pfet_01v8_5CNMEE_2
-timestamp 1616024263
+timestamp 1615600491
 transform 1 0 773 0 1 196
 box -109 -242 109 242
 use contacto  contacto_6
@@ -327,14 +335,6 @@ use contacto  contacto_7
 timestamp 1616018980
 transform 1 0 698 0 1 -332
 box 0 4 66 62
-use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_2
-timestamp 1615298455
-transform 1 0 773 0 1 -159
-box -73 -71 73 71
-use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_3
-timestamp 1615298455
-transform 1 0 685 0 1 -159
-box -73 -71 73 71
 << labels >>
 rlabel metal1 -1024 529 882 565 1 vdd
 rlabel metal1 -1024 -425 882 -384 1 vss

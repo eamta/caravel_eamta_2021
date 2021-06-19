@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623081426
+timestamp 1624067212
 << nwell >>
 rect -107 1050 1084 1271
 rect 1090 1272 2550 1351
@@ -433,21 +433,21 @@ rect 2915 -1406 3895 -1372
 rect 5315 -1402 5350 -1325
 rect 5138 -1436 5350 -1402
 rect 588 -1548 2723 -1514
-use bitc  bitc_1
-timestamp 1615600491
-transform 1 0 3799 0 1 11
-box -1084 -8 1577 1677
-use bitc  bitc_3
-timestamp 1615600491
-transform 1 0 3800 0 1 -1588
+use bitc  bitc_0
+timestamp 1624067212
+transform 1 0 1083 0 1 10
 box -1084 -8 1577 1677
 use bitc  bitc_2
-timestamp 1615600491
+timestamp 1624067212
 transform 1 0 1084 0 1 -1589
 box -1084 -8 1577 1677
-use bitc  bitc_0
-timestamp 1615600491
-transform 1 0 1083 0 1 10
+use bitc  bitc_3
+timestamp 1624067212
+transform 1 0 3800 0 1 -1588
+box -1084 -8 1577 1677
+use bitc  bitc_1
+timestamp 1624067212
+transform 1 0 3799 0 1 11
 box -1084 -8 1577 1677
 << labels >>
 rlabel metal2 384 464 387 516 1 CE

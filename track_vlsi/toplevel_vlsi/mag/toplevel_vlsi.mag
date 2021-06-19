@@ -1,0 +1,25 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1624067264
+use 4bitc  4bitc_0
+timestamp 1624067212
+transform 1 0 111 0 1 1925
+box -107 -1605 5377 1735
+use contador4bits  contador4bits_0
+timestamp 1624067212
+transform 1 0 110 0 1 4116
+box -56 0 6948 1980
+use contador  contador_0
+timestamp 1624067212
+transform 1 0 -50 0 1 -12998
+box 0 0 7741 1645
+use counter4b  counter4b_0
+timestamp 1620951170
+transform 1 0 40 0 1 -7130
+box 0 -2730 3964 910
+use c4b  c4b_0
+timestamp 1624067212
+transform 1 0 118 0 1 -2398
+box -120 -2346 3972 2370
+<< end >>

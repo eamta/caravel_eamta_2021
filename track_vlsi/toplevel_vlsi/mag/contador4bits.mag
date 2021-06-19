@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1617978432
+timestamp 1624067212
 << nwell >>
 rect 3414 1135 3477 1539
 rect 2907 989 2908 991
@@ -92,30 +92,30 @@ rect 3406 285 3881 303
 rect 3354 241 3406 251
 rect 6547 122 6575 572
 rect 316 94 6575 122
-use contador1bit  contador1bit_1 
-timestamp 1617974880
-transform 1 0 3337 0 1 -32
-box 140 32 3554 1022
-use contador1bit  contador1bit_0
-timestamp 1617974880
-transform -1 0 3554 0 1 -32
-box 140 32 3554 1022
-use contador1bit  contador1bit_2
-timestamp 1617974880
-transform 1 0 3337 0 -1 2012
-box 140 32 3554 1022
-use contador1bit  contador1bit_3
-timestamp 1617974880
-transform -1 0 3554 0 -1 2012
-box 140 32 3554 1022
-use contacto  contacto_0
-timestamp 1616018980
-transform 1 0 1558 0 1 1830
-box 0 4 66 62
 use contacto  contacto_1
 timestamp 1616018980
 transform 1 0 5263 0 1 1830
 box 0 4 66 62
+use contacto  contacto_0
+timestamp 1616018980
+transform 1 0 1558 0 1 1830
+box 0 4 66 62
+use contador1bit  contador1bit_3
+timestamp 1624067212
+transform -1 0 3554 0 -1 2012
+box 140 32 3554 1022
+use contador1bit  contador1bit_2
+timestamp 1624067212
+transform 1 0 3337 0 -1 2012
+box 140 32 3554 1022
+use contador1bit  contador1bit_0
+timestamp 1624067212
+transform -1 0 3554 0 1 -32
+box 140 32 3554 1022
+use contador1bit  contador1bit_1
+timestamp 1624067212
+transform 1 0 3337 0 1 -32
+box 140 32 3554 1022
 << labels >>
 rlabel metal1 1812 386 1878 442 1 CLK
 rlabel metal2 291 523 363 577 1 CLR

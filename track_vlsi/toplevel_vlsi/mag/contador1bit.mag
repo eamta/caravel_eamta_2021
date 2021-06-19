@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1617974880
+timestamp 1624067212
 << metal1 >>
 rect 602 971 3554 1022
 rect 602 875 647 971
@@ -30,18 +30,18 @@ rect 1626 390 2895 409
 rect 700 381 2895 390
 rect 1574 380 1626 381
 rect 648 368 700 378
-use xor_lafe  xor_lafe_0
-timestamp 1616195620
-transform 1 0 1001 0 1 201
-box -355 -124 647 821
-use and_lafe  and_lafe_0
-timestamp 1616195620
-transform -1 0 610 0 1 113
-box -36 -36 470 764
 use dffc2  dffc2_0
-timestamp 1616685081
+timestamp 1624067212
 transform 1 0 2672 0 1 457
 box -1024 -425 882 565
+use and_lafe  and_lafe_0
+timestamp 1624067212
+transform -1 0 610 0 1 113
+box -36 -36 470 764
+use xor_lafe  xor_lafe_0
+timestamp 1624067212
+transform 1 0 1001 0 1 201
+box -355 -124 647 821
 << labels >>
 rlabel metal1 632 458 660 566 1 CE
 rlabel metal1 1676 417 1742 475 1 CLK

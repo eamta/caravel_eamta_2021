@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1615579696
+timestamp 1624067212
 << nwell >>
 rect 2948 474 2978 978
 rect 2948 426 2976 474
@@ -55,18 +55,18 @@ rect 2888 246 2940 256
 << metal2 >>
 rect 2888 298 2940 308
 rect 2888 236 2940 246
-use and_masa  and_masa_0
-timestamp 1615571277
-transform 1 0 3016 0 1 66
-box -40 -66 441 912
-use flipflop  flipflop_0
-timestamp 1615568834
-transform 1 0 1568 0 1 72
-box -686 -72 1388 906
 use xor_masa  xor_masa_0
-timestamp 1615399768
+timestamp 1623073648
 transform 1 0 28 0 1 72
 box -28 -72 864 906
+use flipflop  flipflop_0
+timestamp 1624067212
+transform 1 0 1568 0 1 72
+box -686 -72 1388 906
+use and_masa  and_masa_0
+timestamp 1624067212
+transform 1 0 3016 0 1 66
+box -40 -66 441 912
 << labels >>
 rlabel space -28 278 30 314 1 ce
 rlabel poly 2880 240 2946 306 1 Q

@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1615662652
+timestamp 1624067212
 << nwell >>
 rect 1848 1107 1859 1156
 rect 1819 38 1831 87
@@ -34,13 +34,13 @@ rect 1551 779 1579 807
 rect 1551 414 1579 442
 rect 1551 -394 1579 -366
 rect 1551 -759 1579 -731
-use c2b  c2b_0
-timestamp 1615648437
-transform 1 0 79 0 1 598
-box -79 -598 1793 587
 use c2b  c2b_1
-timestamp 1615648437
+timestamp 1624067212
 transform 1 0 79 0 1 -575
+box -79 -598 1793 587
+use c2b  c2b_0
+timestamp 1624067212
+transform 1 0 79 0 1 598
 box -79 -598 1793 587
 << labels >>
 rlabel poly 3 1173 13 1185 1 clr
