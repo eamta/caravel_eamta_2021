@@ -1,0 +1,51 @@
+* NGSPICE file created from mux_8to1.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_L78GGD a_n73_n73# w_n211_n221# a_15_n73# a_n33_33#
+X0 a_15_n73# a_n33_33# a_n73_n73# w_n211_n221# sky130_fd_pr__nfet_01v8 ad=1.218e+11p pd=1.42e+06u as=1.218e+11p ps=1.42e+06u w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_6RX2PQ VSUBS w_n211_n268# a_15_n48# a_n33_n145# a_n73_n48#
+X0 a_15_n48# a_n33_n145# a_n73_n48# w_n211_n268# sky130_fd_pr__pfet_01v8 ad=2.436e+11p pd=2.26e+06u as=2.436e+11p ps=2.26e+06u w=840000u l=150000u
+.ends
+
+.subckt inverter_min vdd out in vss
+XXM1 vss vss out in sky130_fd_pr__nfet_01v8_L78GGD
+XXM2 vss vdd out in vdd sky130_fd_pr__pfet_01v8_6RX2PQ
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XA7ZMQ VSUBS a_21_142# a_63_n111# a_n87_142# a_n125_n111#
++ w_n263_n330# a_n33_n111#
+X0 a_63_n111# a_21_142# a_n33_n111# w_n263_n330# sky130_fd_pr__pfet_01v8 ad=3.441e+11p pd=2.84e+06u as=3.663e+11p ps=2.88e+06u w=1.11e+06u l=150000u
+X1 a_n33_n111# a_n87_142# a_n125_n111# w_n263_n330# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.441e+11p ps=2.84e+06u w=1.11e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_HAN8QX a_15_n142# a_n33_102# a_n73_n142# w_n211_n290#
+X0 a_15_n142# a_n33_102# a_n73_n142# w_n211_n290# sky130_fd_pr__nfet_01v8 ad=3.219e+11p pd=2.8e+06u as=3.219e+11p ps=2.8e+06u w=1.11e+06u l=150000u
+.ends
+
+.subckt mux_2to1_logic sel inverter_min_0/vdd inverter_min_0/vss w_947_n633# out DinA
++ DinB
+Xinverter_min_0 inverter_min_0/vdd sel_b sel inverter_min_0/vss inverter_min
+Xsky130_fd_pr__pfet_01v8_XA7ZMQ_0 inverter_min_0/vss sel DinA sel DinA inverter_min_0/vdd
++ out sky130_fd_pr__pfet_01v8_XA7ZMQ
+Xsky130_fd_pr__pfet_01v8_XA7ZMQ_1 inverter_min_0/vss sel_b DinB sel_b DinB inverter_min_0/vdd
++ out sky130_fd_pr__pfet_01v8_XA7ZMQ
+Xsky130_fd_pr__nfet_01v8_HAN8QX_0 out sel_b DinA inverter_min_0/vss sky130_fd_pr__nfet_01v8_HAN8QX
+Xsky130_fd_pr__nfet_01v8_HAN8QX_1 out sel DinB inverter_min_0/vss sky130_fd_pr__nfet_01v8_HAN8QX
+.ends
+
+
+* Top level circuit mux_8to1
+
+Xmux_2to1_logic_0 reg2 avdd1p8 VSUBS VSUBS mux_2to1_logic_0/out mux_i0 mux_i1 mux_2to1_logic
+Xmux_2to1_logic_1 reg2 avdd1p8 VSUBS VSUBS mux_2to1_logic_1/out mux_i2 mux_i3 mux_2to1_logic
+Xmux_2to1_logic_2 reg1 avdd1p8 VSUBS VSUBS mux_2to1_logic_2/out mux_2to1_logic_0/out
++ mux_2to1_logic_1/out mux_2to1_logic
+Xmux_2to1_logic_3 reg2 avdd1p8 VSUBS VSUBS mux_2to1_logic_3/out mux_i4 mux_i5 mux_2to1_logic
+Xmux_2to1_logic_4 reg2 avdd1p8 VSUBS VSUBS mux_2to1_logic_4/out mux_i6 mux_i7 mux_2to1_logic
+Xmux_2to1_logic_5 reg1 avdd1p8 VSUBS VSUBS mux_2to1_logic_5/out mux_2to1_logic_3/out
++ mux_2to1_logic_4/out mux_2to1_logic
+Xmux_2to1_logic_6 reg0 avdd1p8 VSUBS mux_2to1_logic_6/w_947_n633# out_mux mux_2to1_logic_2/out
++ mux_2to1_logic_5/out mux_2to1_logic
+.end
+
