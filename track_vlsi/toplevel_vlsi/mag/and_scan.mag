@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1620950905
+timestamp 1624077215
 << nwell >>
 rect -36 500 582 566
 rect -36 479 581 500
@@ -97,30 +97,30 @@ rect -36 -272 582 -246
 rect -36 -306 57 -272
 rect 488 -306 582 -272
 rect -36 -344 582 -306
-use sky130_fd_pr__nfet_01v8_PEKVP3  sky130_fd_pr__nfet_01v8_PEKVP3_1
-timestamp 1620950803
-transform 1 0 273 0 1 -128
-box -73 -116 73 116
-use sky130_fd_pr__nfet_01v8_PEKVP3  sky130_fd_pr__nfet_01v8_PEKVP3_0
-timestamp 1620950803
-transform 1 0 73 0 1 -128
-box -73 -116 73 116
-use sky130_fd_pr__pfet_01v8_5AY9XA  sky130_fd_pr__pfet_01v8_5AY9XA_2
-timestamp 1620950905
-transform 1 0 473 0 1 349
-box -109 -152 109 152
-use sky130_fd_pr__nfet_01v8_J6HC3N  sky130_fd_pr__nfet_01v8_J6HC3N_0
-timestamp 1620950867
-transform 1 0 473 0 1 -173
-box -73 -71 73 71
-use sky130_fd_pr__pfet_01v8_5AY9XA  sky130_fd_pr__pfet_01v8_5AY9XA_1
-timestamp 1620950905
-transform 1 0 273 0 1 349
-box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5AY9XA  sky130_fd_pr__pfet_01v8_5AY9XA_0
-timestamp 1620950905
+timestamp 1624077215
 transform 1 0 73 0 1 349
 box -109 -152 109 152
+use sky130_fd_pr__pfet_01v8_5AY9XA  sky130_fd_pr__pfet_01v8_5AY9XA_1
+timestamp 1624077215
+transform 1 0 273 0 1 349
+box -109 -152 109 152
+use sky130_fd_pr__nfet_01v8_J6HC3N  sky130_fd_pr__nfet_01v8_J6HC3N_0
+timestamp 1624077215
+transform 1 0 473 0 1 -173
+box -73 -71 73 71
+use sky130_fd_pr__pfet_01v8_5AY9XA  sky130_fd_pr__pfet_01v8_5AY9XA_2
+timestamp 1624077215
+transform 1 0 473 0 1 349
+box -109 -152 109 152
+use sky130_fd_pr__nfet_01v8_PEKVP3  sky130_fd_pr__nfet_01v8_PEKVP3_0
+timestamp 1624077215
+transform 1 0 73 0 1 -128
+box -73 -116 73 116
+use sky130_fd_pr__nfet_01v8_PEKVP3  sky130_fd_pr__nfet_01v8_PEKVP3_1
+timestamp 1624077215
+transform 1 0 273 0 1 -128
+box -73 -116 73 116
 << labels >>
 rlabel metal1 -36 -312 582 -306 5 VSS
 rlabel metal1 -36 528 582 534 1 VDD

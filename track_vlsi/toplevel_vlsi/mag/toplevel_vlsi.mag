@@ -1,7 +1,44 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624067264
+timestamp 1624080548
+<< metal2 >>
+rect 8552 5598 8812 5836
+rect 9138 5598 9398 5836
+rect 9670 5594 9930 5832
+rect 17512 2528 17772 2766
+rect 17496 326 17756 564
+rect -836 -1764 -576 -1526
+rect 17486 -1706 17746 -1468
+rect -826 -2132 -566 -1894
+rect -832 -2496 -572 -2258
+rect -832 -2890 -572 -2652
+rect -832 -3314 -572 -3076
+rect 17486 -3750 17746 -3512
+use contador  contador_0
+timestamp 1624067212
+transform 1 0 -32 0 1 -6982
+box 0 0 7741 1645
+use mux_8to1  mux_8to1_3
+timestamp 1624074478
+transform 1 0 6874 0 1 -5402
+box -54 1072 10324 2553
+use mux_8to1  mux_8to1_2
+timestamp 1624074478
+transform 1 0 6874 0 1 -3468
+box -54 1072 10324 2553
+use mux_8to1  mux_8to1_1
+timestamp 1624074478
+transform 1 0 6818 0 1 -1424
+box -54 1072 10324 2553
+use mux_8to1  mux_8to1_0
+timestamp 1624074478
+transform 1 0 6928 0 1 786
+box -54 1072 10324 2553
+use counter4b  counter4b_0
+timestamp 1624077215
+transform 1 0 134 0 1 -9282
+box 0 -2730 3964 910
 use 4bitc  4bitc_0
 timestamp 1624067212
 transform 1 0 111 0 1 1925
@@ -10,16 +47,21 @@ use contador4bits  contador4bits_0
 timestamp 1624067212
 transform 1 0 110 0 1 4116
 box -56 0 6948 1980
-use contador  contador_0
-timestamp 1624067212
-transform 1 0 -50 0 1 -12998
-box 0 0 7741 1645
-use counter4b  counter4b_0
-timestamp 1620951170
-transform 1 0 40 0 1 -7130
-box 0 -2730 3964 910
 use c4b  c4b_0
 timestamp 1624067212
 transform 1 0 118 0 1 -2398
 box -120 -2346 3972 2370
+<< labels >>
+rlabel metal2 8552 5598 8812 5836 1 reg2
+rlabel metal2 9138 5598 9398 5836 1 reg1
+rlabel metal2 9670 5594 9930 5832 1 reg0
+rlabel metal2 17486 -3750 17746 -3512 1 Q3
+rlabel metal2 -826 -2132 -566 -1894 1 VSS
+rlabel metal2 -832 -2496 -572 -2258 1 CLK
+rlabel metal2 -832 -2890 -572 -2652 1 CE
+rlabel metal2 -832 -3314 -572 -3076 1 CLR
+rlabel metal2 17486 -1706 17746 -1468 1 Q2
+rlabel metal2 17496 326 17756 564 1 Q1
+rlabel metal2 17512 2528 17772 2766 1 Q0
+rlabel metal2 -836 -1764 -576 -1526 1 VDD
 << end >>
