@@ -5,25 +5,25 @@ V {}
 S {}
 E {}
 N 580 780 610 780 { lab=D3_contador}
-N 580 760 610 760 { lab=Q3_Counter4b}
-N 580 740 610 740 { lab=b3_c4b}
-N 580 720 610 720 { lab=Q3_4bitc}
+N 580 760 610 760 { lab=b3_c4b}
+N 580 740 610 740 { lab=Q3_4bitc}
+N 580 720 610 720 { lab=Q3_contador4bits}
 N 580 350 610 350 { lab=D2_contador}
-N 580 330 610 330 { lab=Q2_Counter4b}
-N 580 310 610 310 { lab=b2_c4b}
-N 580 290 610 290 { lab=Q2_4bitc}
+N 580 330 610 330 { lab=b2_c4b}
+N 580 310 610 310 { lab=Q2_4bitc}
+N 580 290 610 290 { lab=Q2_contador4bits}
 N 580 -80 610 -80 { lab=D1_contador}
-N 580 -100 610 -100 { lab=Q1_Counter4b}
-N 580 -120 610 -120 { lab=b1_c4b}
-N 580 -140 610 -140 { lab=Q1_4bitc}
+N 580 -100 610 -100 { lab=b1_c4b}
+N 580 -120 610 -120 { lab=Q1_4bitc}
+N 580 -140 610 -140 { lab=Q1_contador4bits}
 N 580 -500 610 -500 { lab=D0_contador}
-N 580 -520 610 -520 { lab=Q0_Counter4b}
-N 580 -540 610 -540 { lab=b0_c4b}
-N 580 -560 610 -560 { lab=Q0_4bitc}
-N 580 700 610 700 { lab=Q3_contador4bits}
-N 580 270 610 270 { lab=Q2_contador4bits}
-N 580 -160 610 -160 { lab=Q1_contador4bits}
-N 580 -580 610 -580 { lab=Q0_contador4bits}
+N 580 -520 610 -520 { lab=b0_c4b}
+N 580 -540 610 -540 { lab=Q0_4bitc}
+N 580 -560 610 -560 { lab=Q0_contador4bits}
+N 580 700 610 700 { lab=D3_contador}
+N 580 270 610 270 { lab=D2_contador}
+N 580 -160 610 -160 { lab=D1_contador}
+N 580 -580 610 -580 { lab=D0_contador}
 N 190 -350 230 -350 { lab=Q0_contador4bits}
 N 190 -330 230 -330 { lab=Q2_contador4bits}
 N 190 -310 230 -310 { lab=Q3_contador4bits}
@@ -36,14 +36,10 @@ N 190 160 220 160 { lab=b0_c4b}
 N 190 180 220 180 { lab=b1_c4b}
 N 190 200 220 200 { lab=b2_c4b}
 N 190 220 220 220 { lab=b3_c4b}
-N 200 400 250 400 { lab=Q0_Counter4b}
-N 200 420 250 420 { lab=Q1_Counter4b}
-N 200 440 250 440 { lab=Q2_Counter4b}
-N 200 460 250 460 { lab=Q3_Counter4b}
-N 200 560 250 560 { lab=D0_contador}
-N 200 580 250 580 { lab=D1_contador}
-N 200 600 250 600 { lab=D2_contador}
-N 200 620 250 620 { lab=D3_contador}
+N 200 440 250 440 { lab=D0_contador}
+N 200 460 250 460 { lab=D1_contador}
+N 200 480 250 480 { lab=D2_contador}
+N 200 500 250 500 { lab=D3_contador}
 N -220 130 -180 130 { lab=VDD}
 N -220 160 -180 160 { lab=VSS}
 N -220 190 -180 190 { lab=CLK}
@@ -64,14 +60,11 @@ N -30 180 10 180 { lab=CE}
 N -30 220 10 220 { lab=CLR}
 N 80 80 80 120 { lab=VDD}
 N 80 280 80 320 { lab=VSS}
-N -140 400 -100 400 { lab=CE}
-N -140 420 -100 420 { lab=CLR}
-N -140 440 -100 440 { lab=CLK}
-N -140 560 -100 560 { lab=CE}
-N -140 580 -100 580 { lab=CLR}
-N -140 600 -100 600 { lab=CLK}
-N -140 620 -100 620 { lab=VSS}
-N -140 640 -100 640 { lab=VDD}
+N -140 440 -100 440 { lab=CE}
+N -140 460 -100 460 { lab=CLR}
+N -140 480 -100 480 { lab=CLK}
+N -140 500 -100 500 { lab=VSS}
+N -140 520 -100 520 { lab=VDD}
 N 690 560 690 600 { lab=VDD}
 N 710 560 710 600 { lab=VSS}
 N 690 130 690 170 { lab=VDD}
@@ -96,46 +89,42 @@ N 780 -560 860 -560 { lab=Q0}
 N 680 -20 680 10 { lab=reg2}
 N 700 -20 700 10 { lab=reg1}
 N 720 -20 720 10 { lab=reg0}
-N 580 680 610 680 { lab=D3_contador}
-N 580 660 610 660 { lab=Q3_Counter4b}
-N 580 640 610 640 { lab=b3_c4b}
-N 580 250 610 250 { lab=D2_contador}
-N 580 230 610 230 { lab=Q2_Counter4b}
-N 580 210 610 210 { lab=b2_c4b}
-N 580 -180 610 -180 { lab=D1_contador}
-N 580 -200 610 -200 { lab=Q1_Counter4b}
-N 580 -220 610 -220 { lab=b1_c4b}
-N 580 -600 610 -600 { lab=D0_contador}
-N 580 -620 610 -620 { lab=Q0_Counter4b}
-N 580 -640 610 -640 { lab=b0_c4b}
+N 580 680 610 680 { lab=Q3_Counter4b}
+N 580 660 610 660 { lab=b3_c4b}
+N 580 640 610 640 { lab=Q3_contador4bits}
+N 580 250 610 250 { lab=Q2_Counter4b}
+N 580 230 610 230 { lab=b2_c4b}
+N 580 210 610 210 { lab=Q2_contador4bits}
+N 580 -180 610 -180 { lab=Q1_Counter4b}
+N 580 -200 610 -200 { lab=b1_c4b}
+N 580 -220 610 -220 { lab=Q1_contador4bits}
+N 580 -600 610 -600 { lab=Q0_Counter4b}
+N 580 -620 610 -620 { lab=b0_c4b}
+N 580 -640 610 -640 { lab=#net1}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 780 0 0 {name=l9 sig_type=std_logic lab=D3_contador}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 350 0 0 {name=l10 sig_type=std_logic lab=D2_contador}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -80 0 0 {name=l11 sig_type=std_logic lab=D1_contador}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -500 0 0 {name=l12 sig_type=std_logic lab=D0_contador}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 760 0 0 {name=l17 sig_type=std_logic lab=Q3_Counter4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 330 0 0 {name=l18 sig_type=std_logic lab=Q2_Counter4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -100 0 0 {name=l19 sig_type=std_logic lab=Q1_Counter4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -520 0 0 {name=l20 sig_type=std_logic lab=Q0_Counter4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 310 0 0 {name=l25 sig_type=std_logic lab=b2_c4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -120 0 0 {name=l26 sig_type=std_logic lab=b1_c4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -540 0 0 {name=l28 sig_type=std_logic lab=b0_c4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 740 0 0 {name=l29 sig_type=std_logic lab=b3_c4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 330 0 0 {name=l25 sig_type=std_logic lab=b2_c4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -100 0 0 {name=l26 sig_type=std_logic lab=b1_c4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -520 0 0 {name=l28 sig_type=std_logic lab=b0_c4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 760 0 0 {name=l29 sig_type=std_logic lab=b3_c4b}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 220 -50 0 1 {name=l27 sig_type=std_logic lab=Q3_4bitc}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 220 -90 0 1 {name=l30 sig_type=std_logic lab=Q2_4bitc}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 220 -130 0 1 {name=l31 sig_type=std_logic lab=Q1_4bitc}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 220 -170 0 1 {name=l32 sig_type=std_logic lab=Q0_4bitc}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 720 0 0 {name=l33 sig_type=std_logic lab=Q3_4bitc}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 290 0 0 {name=l34 sig_type=std_logic lab=Q2_4bitc}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -140 0 0 {name=l35 sig_type=std_logic lab=Q1_4bitc}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -560 0 0 {name=l36 sig_type=std_logic lab=Q0_4bitc}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 740 0 0 {name=l33 sig_type=std_logic lab=Q3_4bitc}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 310 0 0 {name=l34 sig_type=std_logic lab=Q2_4bitc}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -120 0 0 {name=l35 sig_type=std_logic lab=Q1_4bitc}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -540 0 0 {name=l36 sig_type=std_logic lab=Q0_4bitc}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 230 -290 0 1 {name=l37 sig_type=std_logic lab=Q1_contador4bits}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 230 -310 0 1 {name=l38 sig_type=std_logic lab=Q3_contador4bits}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 230 -330 0 1 {name=l39 sig_type=std_logic lab=Q2_contador4bits}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 230 -350 0 1 {name=l40 sig_type=std_logic lab=Q0_contador4bits}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 700 0 0 {name=l41 sig_type=std_logic lab=Q3_contador4bits}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 270 0 0 {name=l42 sig_type=std_logic lab=Q2_contador4bits}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -160 0 0 {name=l43 sig_type=std_logic lab=Q1_contador4bits}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -580 0 0 {name=l44 sig_type=std_logic lab=Q0_contador4bits}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 720 0 0 {name=l41 sig_type=std_logic lab=Q3_contador4bits}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 290 0 0 {name=l42 sig_type=std_logic lab=Q2_contador4bits}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -140 0 0 {name=l43 sig_type=std_logic lab=Q1_contador4bits}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -560 0 0 {name=l44 sig_type=std_logic lab=Q0_contador4bits}
 C {mux_8to1_fs.sym} 760 -560 0 0 {name=x2}
 C {mux_8to1_fs.sym} 760 -140 0 0 {name=x3}
 C {mux_8to1_fs.sym} 760 290 0 0 {name=x4}
@@ -146,16 +135,11 @@ C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 220 200 0 1 
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 220 180 0 1 {name=l2 sig_type=std_logic lab=b1_c4b}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 220 160 0 1 {name=l3 sig_type=std_logic lab=b0_c4b}
 C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 220 220 0 1 {name=l4 sig_type=std_logic lab=b3_c4b}
-C {counter4b.sym} 50 430 0 0 {name=xCOUNTER4B VSS=VSS VDD=VDD}
-C {contador.sym} 50 600 0 0 {name=x8}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 250 460 0 1 {name=l13 sig_type=std_logic lab=Q3_Counter4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 250 440 0 1 {name=l14 sig_type=std_logic lab=Q2_Counter4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 250 420 0 1 {name=l15 sig_type=std_logic lab=Q1_Counter4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 250 400 0 1 {name=l16 sig_type=std_logic lab=Q0_Counter4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 250 620 0 1 {name=l21 sig_type=std_logic lab=D3_contador}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 250 600 0 1 {name=l22 sig_type=std_logic lab=D2_contador}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 250 580 0 1 {name=l23 sig_type=std_logic lab=D1_contador}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 250 560 0 1 {name=l24 sig_type=std_logic lab=D0_contador}
+C {contador.sym} 50 480 0 0 {name=x8}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 250 500 0 1 {name=l21 sig_type=std_logic lab=D3_contador}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 250 480 0 1 {name=l22 sig_type=std_logic lab=D2_contador}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 250 460 0 1 {name=l23 sig_type=std_logic lab=D1_contador}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 250 440 0 1 {name=l24 sig_type=std_logic lab=D0_contador}
 C {contador4bits.sym} 50 -310 0 0 {name=x1}
 C {ipin.sym} -220 130 0 0 {name=p1 lab=VDD}
 C {ipin.sym} -220 160 0 0 {name=p2 lab=VSS}
@@ -177,14 +161,11 @@ C {lab_wire.sym} -30 180 0 0 {name=l61 sig_type=std_logic lab=CE}
 C {lab_wire.sym} -30 220 0 0 {name=l62 sig_type=std_logic lab=CLR}
 C {lab_wire.sym} 80 80 1 0 {name=l63 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 80 320 3 0 {name=l64 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} -140 400 0 0 {name=l65 sig_type=std_logic lab=CE}
-C {lab_wire.sym} -140 420 0 0 {name=l66 sig_type=std_logic lab=CLR}
-C {lab_wire.sym} -140 440 0 0 {name=l67 sig_type=std_logic lab=CLK}
-C {lab_wire.sym} -140 560 0 0 {name=l68 sig_type=std_logic lab=CE}
-C {lab_wire.sym} -140 580 0 0 {name=l69 sig_type=std_logic lab=CLR}
-C {lab_wire.sym} -140 600 0 0 {name=l70 sig_type=std_logic lab=CLK}
-C {lab_wire.sym} -140 620 0 0 {name=l71 sig_type=std_logic lab=VSS}
-C {lab_wire.sym} -140 640 0 0 {name=l72 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} -140 440 0 0 {name=l68 sig_type=std_logic lab=CE}
+C {lab_wire.sym} -140 460 0 0 {name=l69 sig_type=std_logic lab=CLR}
+C {lab_wire.sym} -140 480 0 0 {name=l70 sig_type=std_logic lab=CLK}
+C {lab_wire.sym} -140 500 0 0 {name=l71 sig_type=std_logic lab=VSS}
+C {lab_wire.sym} -140 520 0 0 {name=l72 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 690 560 1 0 {name=l50 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 710 560 1 0 {name=l51 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 690 130 1 0 {name=l52 sig_type=std_logic lab=VDD}
@@ -209,15 +190,19 @@ C {lab_wire.sym} 720 10 3 0 {name=l77 sig_type=std_logic lab=reg0}
 C {lab_wire.sym} 680 -410 3 0 {name=l78 sig_type=std_logic lab=reg2}
 C {lab_wire.sym} 700 -410 3 0 {name=l79 sig_type=std_logic lab=reg1}
 C {lab_wire.sym} 720 -410 3 0 {name=l80 sig_type=std_logic lab=reg0}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 680 0 0 {name=l81 sig_type=std_logic lab=D3_contador}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 660 0 0 {name=l82 sig_type=std_logic lab=Q3_Counter4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 640 0 0 {name=l83 sig_type=std_logic lab=b3_c4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 250 0 0 {name=l84 sig_type=std_logic lab=D2_contador}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 230 0 0 {name=l85 sig_type=std_logic lab=Q2_Counter4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 210 0 0 {name=l86 sig_type=std_logic lab=b2_c4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -180 0 0 {name=l87 sig_type=std_logic lab=D1_contador}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -200 0 0 {name=l88 sig_type=std_logic lab=Q1_Counter4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -220 0 0 {name=l89 sig_type=std_logic lab=b1_c4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -600 0 0 {name=l90 sig_type=std_logic lab=D0_contador}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -620 0 0 {name=l91 sig_type=std_logic lab=Q0_Counter4b}
-C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -640 0 0 {name=l92 sig_type=std_logic lab=b0_c4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 700 0 0 {name=l81 sig_type=std_logic lab=D3_contador}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 680 0 0 {name=l82 sig_type=std_logic lab=Q3_Counter4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 660 0 0 {name=l83 sig_type=std_logic lab=b3_c4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 270 0 0 {name=l84 sig_type=std_logic lab=D2_contador}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 250 0 0 {name=l85 sig_type=std_logic lab=Q2_Counter4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 230 0 0 {name=l86 sig_type=std_logic lab=b2_c4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -160 0 0 {name=l87 sig_type=std_logic lab=D1_contador}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -180 0 0 {name=l88 sig_type=std_logic lab=Q1_Counter4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -200 0 0 {name=l89 sig_type=std_logic lab=b1_c4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -580 0 0 {name=l90 sig_type=std_logic lab=D0_contador}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -600 0 0 {name=l91 sig_type=std_logic lab=Q0_Counter4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -620 0 0 {name=l92 sig_type=std_logic lab=b0_c4b}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 210 0 0 {name=l13 sig_type=std_logic lab=Q2_contador4bits}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 640 0 0 {name=l14 sig_type=std_logic lab=Q3_contador4bits}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -220 0 0 {name=l15 sig_type=std_logic lab=Q1_contador4bits}
+C {/home/eamta/skywater/xschem/xschem_library/devices/lab_wire.sym} 580 -640 0 0 {name=l16 sig_type=std_logic lab=Q0_contador4bits}
