@@ -16,6 +16,7 @@ T {isel_b2} 3750 550 0 0 0.4 0.4 {}
 T {CE} 3760 440 0 0 0.4 0.4 {}
 T {CLR} 3750 460 0 0 0.4 0.4 {}
 T {CLK} 3750 410 0 0 0.4 0.4 {}
+T {decap IZQ counter} 4400 100 0 0 0.4 0.4 {}
 N 3890 -140 4760 -140 { lab=#net1}
 N 4760 -280 4760 -140 { lab=#net1}
 N 3890 -170 4440 -170 { lab=#net2}
@@ -44,6 +45,8 @@ N 3960 470 4040 470 { lab=gpio_noesd[12]}
 N 3960 430 4040 430 { lab=gpio_noesd[11]}
 N 4120 320 4120 390 { lab=vssd1}
 N 4230 320 4230 390 { lab=vccd1}
+N 4390 70 4390 140 { lab=vccd1}
+N 4390 200 4390 270 { lab=vssd1}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -114,3 +117,6 @@ C {lab_pin.sym} 3960 430 0 0 {name=l10 sig_type=std_logic lab=gpio_noesd[11]}
 C {/home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/toplevel.sym} 4190 490 0 0 {name=x1}
 C {lab_pin.sym} 4120 350 0 0 {name=l11 sig_type=std_logic lab=vssd1}
 C {lab_pin.sym} 4230 350 0 0 {name=l12 sig_type=std_logic lab=vccd1}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 4390 170 0 0 {name=C1 model=cap_mim_m3_2 W=30 L=30 MF=15 spiceprefix=X}
+C {lab_pin.sym} 4390 100 0 0 {name=l21 sig_type=std_logic lab=vccd1}
+C {lab_pin.sym} 4390 230 0 0 {name=l22 sig_type=std_logic lab=vssd1}
