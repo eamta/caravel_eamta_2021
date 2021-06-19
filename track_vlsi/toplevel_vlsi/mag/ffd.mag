@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624053917
+timestamp 1615600491
 << error_s >>
 rect 1468 2608 1871 2609
 rect 1449 2452 1871 2608
@@ -303,42 +303,42 @@ rect 2750 1327 2784 1403
 rect 2838 1395 2890 2388
 rect 2838 1333 2890 1343
 rect 1435 1293 2785 1327
-use inverter  inverter_0
-timestamp 1624053917
-transform 1 0 1769 0 -1 2611
-box -369 -159 -44 689
-use inverter  inverter_2
-timestamp 1624053917
-transform 1 0 2332 0 1 1281
-box -369 -159 -44 689
-use inverter  inverter_1
-timestamp 1624053917
-transform -1 0 2503 0 -1 2611
-box -369 -159 -44 689
-use nor  nor_0
-timestamp 1624053917
-transform -1 0 2273 0 -1 2758
-box -17 -20 296 869
-use nor  nor_1
-timestamp 1624053917
-transform -1 0 2844 0 1 1134
-box -17 -20 296 869
-use tg  tg_0
-timestamp 1624053917
-transform -1 0 1926 0 -1 2462
-box -35 -326 258 621
-use tg  tg_2
-timestamp 1624053917
-transform 1 0 2328 0 1 1429
-box -35 -326 258 621
-use tg  tg_1
-timestamp 1624053917
-transform -1 0 2507 0 -1 2462
-box -35 -326 258 621
 use tg  tg_3
-timestamp 1624053917
+timestamp 1615600491
 transform 1 0 1747 0 1 1429
 box -35 -326 258 621
+use tg  tg_1
+timestamp 1615600491
+transform -1 0 2507 0 -1 2462
+box -35 -326 258 621
+use tg  tg_2
+timestamp 1615600491
+transform 1 0 2328 0 1 1429
+box -35 -326 258 621
+use tg  tg_0
+timestamp 1615600491
+transform -1 0 1926 0 -1 2462
+box -35 -326 258 621
+use nor  nor_1
+timestamp 1615600491
+transform -1 0 2844 0 1 1134
+box -17 -20 296 869
+use nor  nor_0
+timestamp 1615600491
+transform -1 0 2273 0 -1 2758
+box -17 -20 296 869
+use inverter  inverter_1
+timestamp 1615600491
+transform -1 0 2503 0 -1 2611
+box -369 -159 -44 689
+use inverter  inverter_2
+timestamp 1615600491
+transform 1 0 2332 0 1 1281
+box -369 -159 -44 689
+use inverter  inverter_0
+timestamp 1615600491
+transform 1 0 1769 0 -1 2611
+box -369 -159 -44 689
 << labels >>
 rlabel metal2 1435 1293 2785 1327 1 CLR
 rlabel metal1 1426 2389 1502 2460 1 CLK

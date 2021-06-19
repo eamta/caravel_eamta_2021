@@ -34,17 +34,17 @@ X0 a_15_n45# a_n15_n71# a_n73_n45# VSUBS sky130_fd_pr__nfet_01v8 ad=1.305e+11p p
 .subckt dffc_2 Q vdd CLK c_0_0# CLR vss D
 Xsky130_fd_pr__pfet_01v8_5CNMEE_0 vss m1_655_411# vdd sky130_fd_pr__pfet_01v8_5CNMEE_1/a_15_n180#
 + CLR sky130_fd_pr__pfet_01v8_5CNMEE
+Xsky130_fd_pr__pfet_01v8_5UWV5B_0 vss a_85_600# vdd vdd a_171_264# sky130_fd_pr__pfet_01v8_5UWV5B
 Xsky130_fd_pr__pfet_01v8_5CNMEE_1 vss sky130_fd_pr__pfet_01v8_5CNMEE_1/a_15_n180#
 + vdd vdd a_171_264# sky130_fd_pr__pfet_01v8_5CNMEE
-Xsky130_fd_pr__pfet_01v8_5UWV5B_0 vss a_85_600# vdd vdd a_171_264# sky130_fd_pr__pfet_01v8_5UWV5B
+Xsky130_fd_pr__pfet_01v8_5UWV5B_1 vss a_849_242# D vdd a_85_600# sky130_fd_pr__pfet_01v8_5UWV5B
 Xsky130_fd_pr__pfet_01v8_5CNMEE_2 vss sky130_fd_pr__pfet_01v8_5CNMEE_2/a_15_n180#
 + vdd vdd CLR sky130_fd_pr__pfet_01v8_5CNMEE
-Xsky130_fd_pr__pfet_01v8_5UWV5B_1 vss a_849_242# D vdd a_85_600# sky130_fd_pr__pfet_01v8_5UWV5B
+Xsky130_fd_pr__pfet_01v8_5UWV5B_2 vss CLK vdd vdd a_849_242# sky130_fd_pr__pfet_01v8_5UWV5B
 Xsky130_fd_pr__pfet_01v8_5CNMEE_3 vss Q vdd sky130_fd_pr__pfet_01v8_5CNMEE_2/a_15_n180#
 + a_2229_164# sky130_fd_pr__pfet_01v8_5CNMEE
-Xsky130_fd_pr__pfet_01v8_5UWV5B_2 vss CLK vdd vdd a_849_242# sky130_fd_pr__pfet_01v8_5UWV5B
-Xsky130_fd_pr__pfet_01v8_5UWV5B_4 vss CLK a_171_264# vdd a_2229_164# sky130_fd_pr__pfet_01v8_5UWV5B
 Xsky130_fd_pr__pfet_01v8_5UWV5B_3 vss CLK a_85_600# vdd m1_655_411# sky130_fd_pr__pfet_01v8_5UWV5B
+Xsky130_fd_pr__pfet_01v8_5UWV5B_4 vss CLK a_171_264# vdd a_2229_164# sky130_fd_pr__pfet_01v8_5UWV5B
 Xsky130_fd_pr__pfet_01v8_5UWV5B_5 vss Q Qb vdd vdd sky130_fd_pr__pfet_01v8_5UWV5B
 Xsky130_fd_pr__pfet_01v8_5UWV5B_6 vss a_849_242# a_2229_164# vdd Qb sky130_fd_pr__pfet_01v8_5UWV5B
 Xsky130_fd_pr__nfet_01v8_J836M4_0 vss vss a_85_600# a_171_264# sky130_fd_pr__nfet_01v8_J836M4
@@ -54,8 +54,8 @@ Xsky130_fd_pr__nfet_01v8_J836M4_3 vss m1_655_411# a_849_242# a_85_600# sky130_fd
 Xsky130_fd_pr__nfet_01v8_J836M4_4 vss a_85_600# CLK D sky130_fd_pr__nfet_01v8_J836M4
 Xsky130_fd_pr__nfet_01v8_J836M4_5 vss vss CLK a_849_242# sky130_fd_pr__nfet_01v8_J836M4
 Xsky130_fd_pr__nfet_01v8_J836M4_10 vss Q CLR vss sky130_fd_pr__nfet_01v8_J836M4
-Xsky130_fd_pr__nfet_01v8_J836M4_7 vss a_2229_164# CLK Qb sky130_fd_pr__nfet_01v8_J836M4
 Xsky130_fd_pr__nfet_01v8_J836M4_6 vss a_171_264# a_849_242# a_2229_164# sky130_fd_pr__nfet_01v8_J836M4
+Xsky130_fd_pr__nfet_01v8_J836M4_7 vss a_2229_164# CLK Qb sky130_fd_pr__nfet_01v8_J836M4
 Xsky130_fd_pr__nfet_01v8_J836M4_8 vss Qb Q vss sky130_fd_pr__nfet_01v8_J836M4
 Xsky130_fd_pr__nfet_01v8_J836M4_9 vss vss a_2229_164# Q sky130_fd_pr__nfet_01v8_J836M4
 .ends

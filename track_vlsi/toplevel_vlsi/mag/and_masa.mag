@@ -1,77 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624053917
-<< error_s >>
-rect 316 1111 369 1112
-rect 298 1077 369 1111
-rect 299 1076 369 1077
-rect 316 1042 387 1076
-rect 667 1042 702 1059
-rect 129 1009 187 1015
-rect 129 975 141 1009
-rect 129 969 187 975
-rect -11 912 17 930
-rect 316 912 386 1042
-rect 668 1041 702 1042
-rect 668 1005 738 1041
-rect 1054 1005 1107 1006
-rect 498 974 556 980
-rect 498 940 510 974
-rect 685 971 756 1005
-rect 1036 971 1107 1005
-rect 498 934 556 940
-rect -40 598 386 912
-rect 432 788 441 884
-rect 460 760 469 893
-rect 498 666 556 672
-rect 498 632 510 666
-rect 498 626 556 632
-rect -40 569 418 598
-rect -40 564 386 569
-rect -40 553 452 564
-rect -40 547 372 553
-rect 352 530 372 547
-rect 386 535 452 553
-rect 685 530 755 971
-rect 1037 970 1107 971
-rect 1054 936 1125 970
-rect 867 903 925 909
-rect 867 869 879 903
-rect 867 863 925 869
-rect 867 613 925 619
-rect 867 579 879 613
-rect 867 573 925 579
-rect 685 494 738 530
-rect 1054 477 1124 936
-rect 1236 868 1294 874
-rect 1236 834 1248 868
-rect 1406 845 1440 863
-rect 1828 845 1863 863
-rect 1236 828 1294 834
-rect 1406 809 1476 845
-rect 1792 830 1863 845
-rect 1423 775 1494 809
-rect 1236 560 1294 566
-rect 1236 526 1248 560
-rect 1236 520 1294 526
-rect 1054 441 1107 477
-rect 1423 424 1493 775
-rect 1605 707 1663 713
-rect 1605 673 1617 707
-rect 1605 667 1663 673
-rect 1605 507 1663 513
-rect 1605 473 1617 507
-rect 1605 467 1663 473
-rect 1423 388 1476 424
-rect 1792 371 1862 830
-rect 1974 762 2032 768
-rect 1974 728 1986 762
-rect 1974 722 2032 728
-rect 1974 454 2032 460
-rect 1974 420 1986 454
-rect 1974 414 2032 420
-rect 1792 335 1845 371
+timestamp 1615571277
 << nwell >>
 rect -40 740 441 912
 rect -38 501 441 740
@@ -157,26 +87,16 @@ rect 230 411 296 425
 rect 237 410 292 411
 rect 246 310 280 410
 rect 183 276 280 310
-rect 8 200 42 273
+rect 8 22 42 273
 rect 184 250 208 254
 rect 185 241 208 250
 rect 185 238 219 241
-rect 0 22 200 200
 rect 296 22 330 146
 rect 384 117 418 556
 rect -40 -26 441 22
 rect -40 -60 21 -26
 rect 400 -60 441 -26
 rect -40 -66 441 -60
-rect 0 -400 200 -200
-rect 0 -800 200 -600
-rect 0 -1200 200 -1000
-rect 0 -1600 200 -1400
-rect 0 -2000 200 -1800
-use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_0
-timestamp 1615150785
-transform 1 0 357 0 1 162
-box -73 -71 73 71
 use sky130_fd_pr__pfet_01v8_3YK7C3  sky130_fd_pr__pfet_01v8_3YK7C3_0
 timestamp 1615569502
 transform 1 0 69 0 1 602
@@ -189,6 +109,10 @@ use sky130_fd_pr__pfet_01v8_3YK7C3  sky130_fd_pr__pfet_01v8_3YK7C3_2
 timestamp 1615569502
 transform 1 0 245 0 1 602
 box -109 -152 109 152
+use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_0
+timestamp 1615150785
+transform 1 0 357 0 1 162
+box -73 -71 73 71
 use sky130_fd_pr__nfet_01v8_P8KVP3  sky130_fd_pr__nfet_01v8_P8KVP3_0
 timestamp 1615077590
 transform 1 0 69 0 1 202
@@ -197,46 +121,10 @@ use sky130_fd_pr__nfet_01v8_P8KVP3  sky130_fd_pr__nfet_01v8_P8KVP3_1
 timestamp 1615077590
 transform 1 0 157 0 1 202
 box -73 -116 73 116
-use sky130_fd_pr__nfet_01v8_L9ESED  XM1
-timestamp 1624053917
-transform 1 0 158 0 1 847
-box -211 -300 211 300
-use sky130_fd_pr__pfet_01v8_XSLFBL  XM2
-timestamp 1624053917
-transform 1 0 527 0 1 803
-box -211 -309 211 309
-use sky130_fd_pr__nfet_01v8_L9ESED  XM3
-timestamp 1624053917
-transform 1 0 896 0 1 741
-box -211 -300 211 300
-use sky130_fd_pr__pfet_01v8_XSLFBL  XM4
-timestamp 1624053917
-transform 1 0 1265 0 1 697
-box -211 -309 211 309
-use sky130_fd_pr__pfet_01v8_XSLFBL  XM6
-timestamp 1624053917
-transform 1 0 2003 0 1 591
-box -211 -309 211 309
-use sky130_fd_pr__nfet_01v8_HVW3BE  XM5
-timestamp 1624053917
-transform 1 0 1634 0 1 590
-box -211 -255 211 255
 << labels >>
 rlabel metal1 21 -60 400 -26 1 vss
 rlabel poly -40 14 -10 96 1 in2
 rlabel poly -40 430 12 466 1 in1
 rlabel nwell 43 842 351 876 1 vdd
 rlabel poly 402 569 441 603 1 out
-flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 {}
-port 0 nsew
-flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 vdd
-port 1 nsew
-flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 out
-port 2 nsew
-flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 in2
-port 3 nsew
-flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 in1
-port 4 nsew
-flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 vss
-port 5 nsew
 << end >>
