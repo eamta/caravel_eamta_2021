@@ -4,6 +4,19 @@ K {}
 V {}
 S {}
 E {}
+T {cnt_ob0} 4570 450 0 0 0.4 0.4 {}
+T {cnt_ob1
+} 4570 470 0 0 0.4 0.4 {}
+T {cnt_ob2} 4570 490 0 0 0.4 0.4 {}
+T {cnt_ob3} 4570 510 0 0 0.4 0.4 {}
+T {isel_b0} 3750 500 0 0 0.4 0.4 {}
+T {isel_b1
+} 3750 520 0 0 0.4 0.4 {}
+T {isel_b2} 3750 550 0 0 0.4 0.4 {}
+T {CE} 3760 440 0 0 0.4 0.4 {}
+T {CLR} 3750 460 0 0 0.4 0.4 {}
+T {CLK} 3750 410 0 0 0.4 0.4 {}
+T {decap IZQ counter} 4400 100 0 0 0.4 0.4 {}
 N 3890 -140 4760 -140 { lab=#net1}
 N 4760 -280 4760 -140 { lab=#net1}
 N 3890 -170 4440 -170 { lab=#net2}
@@ -19,7 +32,21 @@ N 4300 -370 4320 -370 { lab=io_analog[6]}
 N 4300 -310 4320 -310 { lab=io_analog[7]}
 N 3970 -370 3990 -370 { lab=io_analog[8]}
 N 3970 -310 3990 -310 { lab=io_analog[9]}
-N 4150 -340 4160 -340 { lab=io_analog[5]}
+N 4150 -340 4160 -340 { lab=io_analog[10]}
+N 3960 450 4040 450 { lab=gpio_noesd[13]}
+N 4340 460 4420 460 { lab=gpio_noesd[0]}
+N 4340 480 4420 480 { lab=gpio_noesd[1]}
+N 4340 500 4420 500 { lab=gpio_noesd[2]}
+N 4340 520 4420 520 { lab=gpio_noesd[3]}
+N 3960 510 4040 510 { lab=gpio_noesd[4]}
+N 3960 530 4040 530 { lab=gpio_noesd[5]}
+N 3960 550 4040 550 { lab=gpio_noesd[6]}
+N 3960 470 4040 470 { lab=gpio_noesd[12]}
+N 3960 430 4040 430 { lab=gpio_noesd[11]}
+N 4120 320 4120 390 { lab=vssd1}
+N 4230 320 4230 390 { lab=vccd1}
+N 4390 70 4390 140 { lab=vccd1}
+N 4390 200 4390 270 { lab=vssd1}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -77,3 +104,19 @@ C {devices/iopin.sym} 3970 -370 2 0 {name=p40 lab=io_analog[8]}
 C {devices/iopin.sym} 3970 -310 2 0 {name=p41 lab=io_analog[9]}
 C {devices/iopin.sym} 4160 -340 0 0 {name=p42 lab=io_analog[10]
 }
+C {lab_pin.sym} 3960 450 0 0 {name=l1 sig_type=std_logic lab=gpio_noesd[13]}
+C {lab_pin.sym} 4420 460 0 1 {name=l2 sig_type=std_logic lab=gpio_noesd[0]}
+C {lab_pin.sym} 4420 480 0 1 {name=l3 sig_type=std_logic lab=gpio_noesd[1]}
+C {lab_pin.sym} 4420 500 0 1 {name=l4 sig_type=std_logic lab=gpio_noesd[2]}
+C {lab_pin.sym} 4420 520 0 1 {name=l5 sig_type=std_logic lab=gpio_noesd[3]}
+C {lab_pin.sym} 3960 510 0 0 {name=l6 sig_type=std_logic lab=gpio_noesd[4]}
+C {lab_pin.sym} 3960 530 0 0 {name=l7 sig_type=std_logic lab=gpio_noesd[5]}
+C {lab_pin.sym} 3960 550 0 0 {name=l8 sig_type=std_logic lab=gpio_noesd[6]}
+C {lab_pin.sym} 3960 470 0 0 {name=l9 sig_type=std_logic lab=gpio_noesd[12]}
+C {lab_pin.sym} 3960 430 0 0 {name=l10 sig_type=std_logic lab=gpio_noesd[11]}
+C {/home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/toplevel.sym} 4190 490 0 0 {name=x1}
+C {lab_pin.sym} 4120 350 0 0 {name=l11 sig_type=std_logic lab=vssd1}
+C {lab_pin.sym} 4230 350 0 0 {name=l12 sig_type=std_logic lab=vccd1}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 4390 170 0 0 {name=C1 model=cap_mim_m3_2 W=30 L=30 MF=15 spiceprefix=X}
+C {lab_pin.sym} 4390 100 0 0 {name=l21 sig_type=std_logic lab=vccd1}
+C {lab_pin.sym} 4390 230 0 0 {name=l22 sig_type=std_logic lab=vssd1}
