@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623959084
+timestamp 1624338677
 << nwell >>
 rect -475 579 -53 607
 << pwell >>
@@ -98,26 +98,26 @@ rect 303 -155 768 -83
 rect 829 -155 839 -83
 rect 232 -160 313 -155
 rect 758 -160 839 -155
-use inverter_min  inverter_min_0
-timestamp 1621353214
-transform 1 0 -422 0 1 -600
-box -53 16 369 1179
-use sky130_fd_pr__nfet_01v8_HAN8QX  sky130_fd_pr__nfet_01v8_HAN8QX_0
-timestamp 1623900471
-transform 1 0 210 0 -1 -343
-box -211 -290 211 290
-use sky130_fd_pr__pfet_01v8_XA7ZMQ  sky130_fd_pr__pfet_01v8_XA7ZMQ_1
-timestamp 1623900471
-transform 1 0 736 0 1 277
-box -263 -330 263 330
-use sky130_fd_pr__nfet_01v8_HAN8QX  sky130_fd_pr__nfet_01v8_HAN8QX_1
-timestamp 1623900471
-transform 1 0 736 0 -1 -343
-box -211 -290 211 290
 use sky130_fd_pr__pfet_01v8_XA7ZMQ  sky130_fd_pr__pfet_01v8_XA7ZMQ_0
-timestamp 1623900471
+timestamp 1624338677
 transform 1 0 210 0 1 277
 box -263 -330 263 330
+use sky130_fd_pr__nfet_01v8_HAN8QX  sky130_fd_pr__nfet_01v8_HAN8QX_1
+timestamp 1624338677
+transform 1 0 736 0 -1 -343
+box -211 -290 211 290
+use sky130_fd_pr__pfet_01v8_XA7ZMQ  sky130_fd_pr__pfet_01v8_XA7ZMQ_1
+timestamp 1624338677
+transform 1 0 736 0 1 277
+box -263 -330 263 330
+use sky130_fd_pr__nfet_01v8_HAN8QX  sky130_fd_pr__nfet_01v8_HAN8QX_0
+timestamp 1624338677
+transform 1 0 210 0 -1 -343
+box -211 -290 211 290
+use inverter_min  inverter_min_0
+timestamp 1624338677
+transform 1 0 -422 0 1 -600
+box -53 16 369 1179
 << labels >>
 rlabel metal2 -332 -64 -311 -46 1 sel
 rlabel metal2 -94 -63 -73 -45 1 sel_b

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624067212
+timestamp 1624338677
 << nwell >>
 rect -96 745 990 852
 rect -96 741 4 745
@@ -151,51 +151,51 @@ rect 10 1 11 799
 rect 892 1 893 799
 rect 10 0 893 1
 use sky130_fd_pr__nfet_01v8_NNQ2PV  sky130_fd_pr__nfet_01v8_NNQ2PV_0
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 110 0 1 116
 box -73 -71 73 71
 use nmos_900_derecha  nmos_900_derecha_0
-timestamp 1615566114
+timestamp 1624338677
 transform 1 0 310 0 1 167
 box -73 -122 73 110
 use nmos_900_dos  nmos_900_dos_1
-timestamp 1615566114
+timestamp 1624338677
 transform 1 0 486 0 1 167
 box -73 -122 73 110
 use nmos_900_dos  nmos_900_dos_0
-timestamp 1615566114
+timestamp 1624338677
 transform 1 0 398 0 1 167
 box -73 -122 73 110
 use nmos_900_izquierda  nmos_900_izquierda_0
-timestamp 1615566114
+timestamp 1624338677
 transform 1 0 574 0 1 167
 box -73 -122 73 110
 use sky130_fd_pr__nfet_01v8_NNQ2PV  sky130_fd_pr__nfet_01v8_NNQ2PV_1
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 792 0 1 116
 box -73 -71 73 71
 use sky130_fd_pr__pfet_01v8_5UWV5B  sky130_fd_pr__pfet_01v8_5UWV5B_1
-timestamp 1615851015
+timestamp 1624338677
 transform 1 0 310 0 1 637
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5UWV5B  sky130_fd_pr__pfet_01v8_5UWV5B_0
-timestamp 1615851015
+timestamp 1624338677
 transform 1 0 110 0 1 637
 box -109 -152 109 152
 use pmos_900_derecho  pmos_900_derecho_0
-timestamp 1615566114
+timestamp 1624338677
 transform 1 0 289 0 1 485
 box 0 0 218 286
 use pmos_900_izquierdo  pmos_900_izquierdo_0
-timestamp 1615566114
+timestamp 1624338677
 transform 1 0 377 0 1 485
 box 0 0 218 286
 use sky130_fd_pr__pfet_01v8_5UWV5B  sky130_fd_pr__pfet_01v8_5UWV5B_2
-timestamp 1615851015
+timestamp 1624338677
 transform 1 0 574 0 1 637
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5UWV5B  sky130_fd_pr__pfet_01v8_5UWV5B_3
-timestamp 1615851015
+timestamp 1624338677
 transform 1 0 792 0 1 637
 box -109 -152 109 152
 << labels >>

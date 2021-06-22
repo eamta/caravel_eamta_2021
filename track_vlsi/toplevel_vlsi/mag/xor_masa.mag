@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623073648
+timestamp 1624338677
 << nwell >>
 rect -28 366 864 906
 << psubdiff >>
@@ -117,51 +117,51 @@ rect -28 -66 42 -32
 rect 790 -66 864 -32
 rect -28 -72 864 -66
 use sky130_fd_pr__nfet_01v8_J83WCX  sky130_fd_pr__nfet_01v8_J83WCX_0
-timestamp 1615216760
+timestamp 1624338677
 transform 1 0 91 0 1 188
 box -73 -102 73 40
 use sky130_fd_pr__nfet_01v8_H7KMG3  sky130_fd_pr__nfet_01v8_H7KMG3_2
-timestamp 1615216760
+timestamp 1624338677
 transform 1 0 467 0 1 203
 box -73 -147 73 85
 use sky130_fd_pr__nfet_01v8_H7KMG3  sky130_fd_pr__nfet_01v8_H7KMG3_1
-timestamp 1615216760
+timestamp 1624338677
 transform 1 0 379 0 1 203
 box -73 -147 73 85
 use sky130_fd_pr__nfet_01v8_H7KMG3  sky130_fd_pr__nfet_01v8_H7KMG3_0
-timestamp 1615216760
+timestamp 1624338677
 transform 1 0 291 0 1 203
 box -73 -147 73 85
 use sky130_fd_pr__nfet_01v8_H7KMG3  sky130_fd_pr__nfet_01v8_H7KMG3_3
-timestamp 1615216760
+timestamp 1624338677
 transform 1 0 555 0 1 203
 box -73 -147 73 85
 use sky130_fd_pr__nfet_01v8_J83WCX  sky130_fd_pr__nfet_01v8_J83WCX_1
-timestamp 1615216760
+timestamp 1624338677
 transform 1 0 755 0 1 126
 box -73 -102 73 40
 use sky130_fd_pr__pfet_01v8_5AY9XA_masa  sky130_fd_pr__pfet_01v8_5AY9XA_masa_0
-timestamp 1615394250
+timestamp 1624338677
 transform 1 0 91 0 1 664
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5AY9XA_masa  sky130_fd_pr__pfet_01v8_5AY9XA_masa_1
-timestamp 1615394250
+timestamp 1624338677
 transform 1 0 291 0 1 602
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5AY9XA_masa  sky130_fd_pr__pfet_01v8_5AY9XA_masa_3
-timestamp 1615394250
+timestamp 1624338677
 transform 1 0 467 0 1 602
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5AY9XA_masa  sky130_fd_pr__pfet_01v8_5AY9XA_masa_2
-timestamp 1615394250
+timestamp 1624338677
 transform 1 0 379 0 1 602
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5AY9XA_masa  sky130_fd_pr__pfet_01v8_5AY9XA_masa_4
-timestamp 1615394250
+timestamp 1624338677
 transform 1 0 555 0 1 602
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5AY9XA_masa  sky130_fd_pr__pfet_01v8_5AY9XA_masa_5
-timestamp 1615394250
+timestamp 1624338677
 transform 1 0 755 0 1 604
 box -109 -152 109 152
 << labels >>

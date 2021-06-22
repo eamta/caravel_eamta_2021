@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624067212
+timestamp 1624338677
 << nwell >>
 rect -219 539 880 917
 rect -219 486 -96 539
@@ -197,51 +197,51 @@ rect 64 195 604 228
 rect 594 176 604 195
 rect 656 176 662 228
 use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_0
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 -111 0 1 225
 box -73 -71 73 71
 use sky130_fd_pr__nfet_01v8_P8KVP3  sky130_fd_pr__nfet_01v8_P8KVP3_1
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 207 0 1 270
 box -73 -116 73 116
 use sky130_fd_pr__nfet_01v8_P8KVP3  sky130_fd_pr__nfet_01v8_P8KVP3_2
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 295 0 1 270
 box -73 -116 73 116
 use sky130_fd_pr__nfet_01v8_P8KVP3  sky130_fd_pr__nfet_01v8_P8KVP3_3
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 383 0 1 270
 box -73 -116 73 116
 use sky130_fd_pr__nfet_01v8_P8KVP3  sky130_fd_pr__nfet_01v8_P8KVP3_4
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 471 0 1 270
 box -73 -116 73 116
 use sky130_fd_pr__nfet_01v8_J836M4  sky130_fd_pr__nfet_01v8_J836M4_1
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 771 0 1 225
 box -73 -71 73 71
 use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_0
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 -111 0 1 638
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_1
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 207 0 1 638
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_2
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 295 0 1 638
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_5
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 383 0 1 638
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_4
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 471 0 1 638
 box -109 -152 109 152
 use sky130_fd_pr__pfet_01v8_5AYHFE  sky130_fd_pr__pfet_01v8_5AYHFE_3
-timestamp 1615600491
+timestamp 1624338677
 transform 1 0 771 0 1 638
 box -109 -152 109 152
 << labels >>

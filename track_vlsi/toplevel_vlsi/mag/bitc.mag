@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624067212
+timestamp 1624338677
 << error_s >>
 rect 65 1497 468 1498
 rect 46 1341 468 1497
@@ -69,18 +69,18 @@ rect -1040 345 -1019 389
 rect -27 381 25 391
 rect -1019 327 -967 337
 rect 31 182 32 216
-use ffd  ffd_0
-timestamp 1624067212
-transform 1 0 -1403 0 1 -1111
-box 1310 1103 2980 2788
-use xor_lede  xor_lede_0
-timestamp 1624067212
-transform 1 0 -864 0 -1 1689
-box -220 31 881 917
 use and_lede  and_lede_0
-timestamp 1624067212
+timestamp 1624338677
 transform 1 0 -1017 0 1 494
 box -67 -481 548 400
+use xor_lede  xor_lede_0
+timestamp 1624338677
+transform 1 0 -864 0 -1 1689
+box -220 31 881 917
+use ffd  ffd_0
+timestamp 1624338677
+transform 1 0 -1403 0 1 -1111
+box 1310 1103 2980 2788
 << labels >>
 rlabel metal2 1389 1295 1423 1587 1 Dn
 rlabel space 1246 1393 1466 1427 1 Dnb

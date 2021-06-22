@@ -1,11 +1,13 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1615600491
+timestamp 1624338677
 << error_p >>
 rect -29 86 29 92
 rect -29 52 -17 86
 rect -29 46 29 52
+rect -73 -76 -15 14
+rect 15 -76 73 14
 << nmos >>
 rect -15 -76 15 14
 << ndiff >>

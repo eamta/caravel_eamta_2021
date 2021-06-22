@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624067212
+timestamp 1624338677
 << nwell >>
 rect 56 972 3586 1174
 rect 3506 544 3586 972
@@ -85,13 +85,13 @@ rect 56 -1196 3586 -922
 << metal2 >>
 rect 2946 364 2998 416
 rect 2946 -366 2998 -314
-use c1b  c1b_0
-timestamp 1624067212
-transform 1 0 58 0 1 118
-box -72 -108 3457 1056
 use c1b  c1b_1
-timestamp 1624067212
+timestamp 1624338677
 transform 1 0 58 0 -1 -68
+box -72 -108 3457 1056
+use c1b  c1b_0
+timestamp 1624338677
+transform 1 0 58 0 1 118
 box -72 -108 3457 1056
 << labels >>
 rlabel metal2 2946 364 2998 416 1 b0

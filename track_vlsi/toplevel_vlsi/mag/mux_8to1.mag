@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624074478
+timestamp 1624338677
 << metal1 >>
 rect -54 2372 10324 2463
 rect -54 2280 -44 2372
@@ -242,33 +242,33 @@ rect 9988 1684 9998 1756
 rect 9902 1679 9998 1684
 rect 9902 1554 9974 1679
 rect 8773 1482 9974 1554
-use mux_2to1_logic  mux_2to1_logic_6
-timestamp 1623959084
-transform 1 0 9319 0 -1 1770
-box -475 -633 999 607
-use mux_2to1_logic  mux_2to1_logic_5
-timestamp 1623959084
-transform 1 0 7845 0 -1 1770
-box -475 -633 999 607
-use mux_2to1_logic  mux_2to1_logic_4
-timestamp 1623959084
-transform 1 0 6371 0 -1 1770
-box -475 -633 999 607
-use mux_2to1_logic  mux_2to1_logic_3
-timestamp 1623959084
-transform 1 0 4897 0 -1 1770
-box -475 -633 999 607
-use mux_2to1_logic  mux_2to1_logic_2
-timestamp 1623959084
-transform 1 0 3423 0 -1 1770
+use mux_2to1_logic  mux_2to1_logic_1
+timestamp 1624338677
+transform 1 0 1949 0 -1 1770
 box -475 -633 999 607
 use mux_2to1_logic  mux_2to1_logic_0
-timestamp 1623959084
+timestamp 1624338677
 transform 1 0 475 0 -1 1770
 box -475 -633 999 607
-use mux_2to1_logic  mux_2to1_logic_1
-timestamp 1623959084
-transform 1 0 1949 0 -1 1770
+use mux_2to1_logic  mux_2to1_logic_2
+timestamp 1624338677
+transform 1 0 3423 0 -1 1770
+box -475 -633 999 607
+use mux_2to1_logic  mux_2to1_logic_3
+timestamp 1624338677
+transform 1 0 4897 0 -1 1770
+box -475 -633 999 607
+use mux_2to1_logic  mux_2to1_logic_4
+timestamp 1624338677
+transform 1 0 6371 0 -1 1770
+box -475 -633 999 607
+use mux_2to1_logic  mux_2to1_logic_5
+timestamp 1624338677
+transform 1 0 7845 0 -1 1770
+box -475 -633 999 607
+use mux_2to1_logic  mux_2to1_logic_6
+timestamp 1624338677
+transform 1 0 9319 0 -1 1770
 box -475 -633 999 607
 << labels >>
 rlabel metal2 8893 2121 8918 2147 1 reg0

@@ -1,14 +1,14 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1615566114
+timestamp 1624338677
 << error_p >>
 rect 136 236 148 242
 rect 158 236 170 242
 rect 124 218 130 230
 rect 176 218 182 230
 use contacto_chico_2_ok  contacto_chico_2_ok_0
-timestamp 1615566114
+timestamp 1624338677
 transform 1 0 109 0 1 152
 box -109 -152 109 134
 << end >>
