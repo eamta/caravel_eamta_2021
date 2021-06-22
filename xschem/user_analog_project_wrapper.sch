@@ -20,6 +20,7 @@ T {decap IZQ counter} 3890 190 0 0 0.4 0.4 {}
 T {entre opamp ramiro y manuel} 4240 -60 0 0 0.4 0.4 {}
 T {izq opamp lucas} 3920 -60 0 0 0.4 0.4 {}
 T {entre bias y opamp} 4700 -70 0 0 0.4 0.4 {}
+T {decap IZQ counter} 4460 240 0 0 0.4 0.4 {}
 N 3890 -140 4760 -140 { lab=#net1}
 N 4760 -280 4760 -140 { lab=#net1}
 N 3890 -170 4440 -170 { lab=#net2}
@@ -50,12 +51,14 @@ N 4120 320 4120 390 { lab=vssd1}
 N 4230 320 4230 390 { lab=vccd1}
 N 3880 160 3880 230 { lab=vccd1}
 N 3880 290 3880 360 { lab=vssd1}
-N 4230 -90 4230 -20 { lab=vccd1}
-N 4230 40 4230 110 { lab=vssd1}
-N 3910 -90 3910 -20 { lab=vccd1}
-N 3910 40 3910 110 { lab=vssd1}
-N 4680 -90 4680 -20 { lab=vccd1}
-N 4680 40 4680 110 { lab=vssd1}
+N 4230 -90 4230 -20 { lab=vdda1}
+N 4230 40 4230 110 { lab=vssa1}
+N 3910 -90 3910 -20 { lab=vdda1}
+N 3910 40 3910 110 { lab=vssa1}
+N 4680 -90 4680 -20 { lab=vdda1}
+N 4680 40 4680 110 { lab=vssa1}
+N 4450 210 4450 280 { lab=vccd1}
+N 4450 340 4450 410 { lab=vssd1}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -130,11 +133,14 @@ C {sky130_fd_pr/cap_mim_m3_2.sym} 3880 260 0 0 {name=C1 model=cap_mim_m3_2 W=30 
 C {lab_pin.sym} 3880 190 0 0 {name=l21 sig_type=std_logic lab=vccd1}
 C {lab_pin.sym} 3880 320 0 0 {name=l22 sig_type=std_logic lab=vssd1}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 4230 10 0 0 {name=C2 model=cap_mim_m3_2 W=30 L=30 MF=170 spiceprefix=X}
-C {lab_pin.sym} 4230 -60 0 0 {name=l23 sig_type=std_logic lab=vccd1}
-C {lab_pin.sym} 4230 70 0 0 {name=l24 sig_type=std_logic lab=vssd1}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 3910 10 0 0 {name=C3 model=cap_mim_m3_2 W=30 L=30 MF=85 spiceprefix=X}
-C {lab_pin.sym} 3910 -60 0 0 {name=l25 sig_type=std_logic lab=vccd1}
-C {lab_pin.sym} 3910 70 0 0 {name=l26 sig_type=std_logic lab=vssd1}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 4680 10 0 0 {name=C4 model=cap_mim_m3_2 W=30 L=30 MF=85 spiceprefix=X}
-C {lab_pin.sym} 4680 -60 0 0 {name=l27 sig_type=std_logic lab=vccd1}
-C {lab_pin.sym} 4680 70 0 0 {name=l28 sig_type=std_logic lab=vssd1}
+C {lab_pin.sym} 4680 -60 0 0 {name=l27 sig_type=std_logic lab=vdda1}
+C {lab_pin.sym} 4680 70 0 0 {name=l28 sig_type=std_logic lab=vssa1}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 4450 310 0 0 {name=C5 model=cap_mim_m3_2 W=30 L=30 MF=15 spiceprefix=X}
+C {lab_pin.sym} 4450 240 0 0 {name=l29 sig_type=std_logic lab=vccd1}
+C {lab_pin.sym} 4450 370 0 0 {name=l30 sig_type=std_logic lab=vssd1}
+C {lab_pin.sym} 4230 70 0 0 {name=l23 sig_type=std_logic lab=vssa1}
+C {lab_pin.sym} 3910 70 0 0 {name=l24 sig_type=std_logic lab=vssa1}
+C {lab_pin.sym} 4230 -70 0 0 {name=l25 sig_type=std_logic lab=vdda1}
+C {lab_pin.sym} 3910 -70 0 0 {name=l26 sig_type=std_logic lab=vdda1}

@@ -19,17 +19,16 @@ x4 VDD VSS Q2_contador4bits Q2_4bitc b2_c4b Q2 D2_contador Q2_contador4bits reg0
 + D2_contador reg1 reg2 mux_8to1_fs
 x5 VDD VSS Q3_contador4bits Q3_4bitc b3_c4b Q3 D3_contador Q3_contador4bits reg0 Q3_4bitc b3_c4b
 + D3_contador reg1 reg2 mux_8to1_fs
-x6 Q0_4bitc CE __UNCONNECTED_PIN__0 Q1_4bitc __UNCONNECTED_PIN__1 Q2_4bitc __UNCONNECTED_PIN__2
-+ Q3_4bitc __UNCONNECTED_PIN__3 __UNCONNECTED_PIN__4 VSS VDD CLR CLK 4bitc
-x7 CE CLK CLR VDD VSS b0_c4b b1_c4b b2_c4b b3_c4b __UNCONNECTED_PIN__5 c4b
+x6 Q0_4bitc CE net6 Q1_4bitc net5 Q2_4bitc net4 Q3_4bitc net2 net3 VSS VDD CLR CLK 4bitc
+x7 CE CLK CLR VDD VSS b0_c4b b1_c4b b2_c4b b3_c4b net7 c4b
 x8 D0_contador CE CLR CLK VSS VDD D1_contador D2_contador D3_contador contador
-x1 VDD Q0_contador4bits Q2_contador4bits Q3_contador4bits Q1_contador4bits CE CLR
-+ __UNCONNECTED_PIN__6 VSS CLK contador4bits
+x1 VDD Q0_contador4bits Q2_contador4bits Q3_contador4bits Q1_contador4bits CE CLR net1 VSS CLK
++ contador4bits
 **.ends
 
 * expanding   symbol:  mux_8to1_fs.sym # of pins=14
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/mux_8to1_fs.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/mux_8to1_fs.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/mux_8to1_fs.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/mux_8to1_fs.sch
 .subckt mux_8to1_fs  avdd1p8 avss1p8 mux_i7 mux_i6 mux_i5 out_mux mux_i4 mux_i3 reg0 mux_i2 mux_i1
 + mux_i0 reg1 reg2
 *.ipin reg2
@@ -57,8 +56,8 @@ x8 avdd1p8 reg0 avss1p8 net6 out_mux net3 mux_2to1_logic
 
 
 * expanding   symbol:  4bitc.sym # of pins=14
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/4bitc.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/4bitc.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/4bitc.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/4bitc.sch
 .subckt 4bitc  Q0 CE Q0n Q1 Q1n Q2 Q2n Q3 Q3n Sout3 vss vdd CLR CLK
 *.ipin CE
 *.opin Q0
@@ -90,8 +89,8 @@ x10 vdd vss Q3 net6 CLK CLR Q3n ffdc
 
 
 * expanding   symbol:  c4b.sym # of pins=10
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/c4b.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/c4b.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/c4b.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/c4b.sch
 .subckt c4b  ce clk clr vdd vss b0 b1 b2 b3 out
 *.ipin clr
 *.ipin vdd
@@ -109,8 +108,8 @@ x2 net1 clk clr vdd vss b2 b3 out c2b
 
 
 * expanding   symbol:  contador.sym # of pins=9
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/contador.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/contador.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/contador.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/contador.sch
 .subckt contador  D0 CE CLR CLK vss vdd D1 D2 D3
 *.ipin CE
 *.ipin CLR
@@ -136,8 +135,8 @@ x12 net9 D3 net7 vdd vss xor_somo
 
 
 * expanding   symbol:  contador4bits.sym # of pins=10
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/contador4bits.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/contador4bits.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/contador4bits.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/contador4bits.sch
 .subckt contador4bits  vdd Q0 Q2 Q3 Q1 CE CLR Sout vss CLK
 *.ipin CE
 *.ipin CLR
@@ -157,8 +156,8 @@ x4 vdd Q3 Sout CLK CLR net3 vss contador1bit
 
 
 * expanding   symbol:  mux_2to1_logic.sym # of pins=6
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/mux_2to1_logic.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/mux_2to1_logic.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/mux_2to1_logic.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/mux_2to1_logic.sch
 .subckt mux_2to1_logic  avdd1p8 sel avss1p8 DinB out DinA
 *.ipin DinB
 *.ipin DinA
@@ -183,8 +182,8 @@ x1 avdd1p8 sel_b sel avss1p8 inverter_min
 
 
 * expanding   symbol:  and_lede.sym # of pins=5
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_lede.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_lede.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_lede.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_lede.sch
 .subckt and_lede  vdd A B out vss
 *.opin out
 *.ipin vdd
@@ -213,8 +212,8 @@ XM6 out net2 vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2
 
 
 * expanding   symbol:  xor_lede.sym # of pins=5
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_lede.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_lede.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_lede.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_lede.sch
 .subckt xor_lede  vdd a b z vss
 *.ipin vdd
 *.ipin vss
@@ -261,8 +260,8 @@ XM12 net2 b vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) 
 
 
 * expanding   symbol:  ffdc.sym # of pins=7
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/ffdc.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/ffdc.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/ffdc.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/ffdc.sch
 .subckt ffdc  VDD VSS Q D CLK CLR Qb
 *.ipin D
 *.ipin vdd
@@ -341,8 +340,8 @@ XM21 cn CLK vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  c2b.sym # of pins=8
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/c2b.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/c2b.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/c2b.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/c2b.sch
 .subckt c2b  ce clk clr vdd vss b0 b1 out
 *.ipin ce
 *.ipin clk
@@ -358,8 +357,8 @@ x2 net1 clk clr vdd vss b1 out c1b
 
 
 * expanding   symbol:  dffc_somo.sym # of pins=7
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/dffc_somo.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/dffc_somo.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/dffc_somo.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/dffc_somo.sch
 .subckt dffc_somo  Q vdd vss D CLR CLK Qb
 *.ipin vdd
 *.ipin vss
@@ -438,8 +437,8 @@ XM16 Qb Q vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) * 
 
 
 * expanding   symbol:  and_somo.sym # of pins=5
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_somo.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_somo.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_somo.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_somo.sch
 .subckt and_somo  vdd A Z B vss
 *.ipin A
 *.ipin B
@@ -468,8 +467,8 @@ XM5 Z net1 vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/2) 
 
 
 * expanding   symbol:  xor_somo.sym # of pins=5
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_somo.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_somo.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_somo.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_somo.sch
 .subckt xor_somo  Z A B vdd vss
 *.ipin A
 *.ipin B
@@ -516,8 +515,8 @@ XM3 medio B vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2) 
 
 
 * expanding   symbol:  contador1bit.sym # of pins=7
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/contador1bit.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/contador1bit.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/contador1bit.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/contador1bit.sch
 .subckt contador1bit  vdd Q Sout CLK CLR CE vss
 *.opin Sout
 *.ipin CE
@@ -533,8 +532,8 @@ x3 net1 Q CLK CLR vdd vss dffc_lafe
 
 
 * expanding   symbol:  inverter_min.sym # of pins=4
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/inverter_min.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/inverter_min.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/inverter_min.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/inverter_min.sch
 .subckt inverter_min  vdd out in vss
 *.iopin vss
 *.ipin in
@@ -550,8 +549,8 @@ XM1 out in vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) 
 
 
 * expanding   symbol:  c1b.sym # of pins=7
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/c1b.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/c1b.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/c1b.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/c1b.sch
 .subckt c1b  ce clk clr vdd vss Q out
 *.ipin clk
 *.ipin clr
@@ -567,8 +566,8 @@ x1 net1 Q clr clk vdd vss flipflop
 
 
 * expanding   symbol:  and_lafe.sym # of pins=5
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_lafe.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_lafe.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_lafe.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_lafe.sch
 .subckt and_lafe  vdd vb out va vss
 *.opin out
 *.ipin va
@@ -597,8 +596,8 @@ XM6 out net2 vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  xor_lafe.sym # of pins=5
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_lafe.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_lafe.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_lafe.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_lafe.sch
 .subckt xor_lafe  vdd in1 in2 out vss
 *.ipin in1
 *.ipin in2
@@ -645,8 +644,8 @@ XM12 in1N in1 vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)/
 
 
 * expanding   symbol:  dffc_lafe.sym # of pins=6
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/dffc_lafe.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/dffc_lafe.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/dffc_lafe.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/dffc_lafe.sch
 .subckt dffc_lafe  D Q CLK CLR vdd vss
 *.ipin D
 *.ipin CLK_in
@@ -730,8 +729,8 @@ XM24 clk n_clk vss vss sky130_fd_pr__nfet_01v8 L=0.15 W=0.45 nf=1 ad='int((nf+1)
 
 
 * expanding   symbol:  xor_masa.sym # of pins=5
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_masa.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_masa.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_masa.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/xor_masa.sch
 .subckt xor_masa  vdd out in2 in1 vss
 *.ipin in1
 *.ipin in2
@@ -778,8 +777,8 @@ XM8 out in2_n net1 vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/
 
 
 * expanding   symbol:  and_masa.sym # of pins=5
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_masa.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_masa.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_masa.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/and_masa.sch
 .subckt and_masa  vdd out in2 in1 vss
 *.opin out
 *.ipin in2
@@ -808,8 +807,8 @@ XM6 out net2 vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.9 nf=1 ad='int((nf+1)/2)
 
 
 * expanding   symbol:  flipflop.sym # of pins=6
-* sym_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/flipflop.sym
-* sch_path: /home/eamta/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/flipflop.sch
+* sym_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/flipflop.sym
+* sch_path: /home/fsolis/caravel_eamta_2021/track_vlsi/toplevel_vlsi/sch/flipflop.sch
 .subckt flipflop  D Q clr clk vdd vss
 *.ipin clk
 *.ipin D

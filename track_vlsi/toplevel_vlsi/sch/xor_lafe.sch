@@ -83,7 +83,7 @@ N -300 -210 -300 -110 { lab=in2N}
 N -300 -150 -220 -150 { lab=in2N}
 N 440 -160 510 -160 { lab=in1N}
 N 210 30 260 30 { lab=out}
-C {/home/eamta/skywater/xschem_sky130/sky130_fd_pr/nfet_01v8.sym} 0 140 0 0 {name=M1
+C {sky130_fd_pr/nfet_01v8.sym} 0 140 0 0 {name=M1
 L=0.15
 W=0.9
 nf=1 
@@ -97,7 +97,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/eamta/skywater/xschem_sky130/sky130_fd_pr/nfet_01v8.sym} 0 270 0 0 {name=M2
+C {sky130_fd_pr/nfet_01v8.sym} 0 270 0 0 {name=M2
 L=0.15
 W=0.9
 nf=1 
@@ -111,7 +111,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/eamta/skywater/xschem_sky130/sky130_fd_pr/nfet_01v8.sym} 190 270 0 0 {name=M3
+C {sky130_fd_pr/nfet_01v8.sym} 190 270 0 0 {name=M3
 L=0.15
 W=0.9
 nf=1 
@@ -125,7 +125,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/eamta/skywater/xschem_sky130/sky130_fd_pr/nfet_01v8.sym} 190 140 0 0 {name=M4
+C {sky130_fd_pr/nfet_01v8.sym} 190 140 0 0 {name=M4
 L=0.15
 W=0.9
 nf=1 
@@ -139,7 +139,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/eamta/skywater/xschem_sky130/sky130_fd_pr/pfet_01v8.sym} 0 -170 0 0 {name=M5
+C {sky130_fd_pr/pfet_01v8.sym} 0 -170 0 0 {name=M5
 L=0.15
 W=0.9
 nf=1
@@ -153,7 +153,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {/home/eamta/skywater/xschem_sky130/sky130_fd_pr/pfet_01v8.sym} 0 -70 0 0 {name=M6
+C {sky130_fd_pr/pfet_01v8.sym} 0 -70 0 0 {name=M6
 L=0.15
 W=0.9
 nf=1
@@ -167,7 +167,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {/home/eamta/skywater/xschem_sky130/sky130_fd_pr/pfet_01v8.sym} 190 -170 0 0 {name=M7
+C {sky130_fd_pr/pfet_01v8.sym} 190 -170 0 0 {name=M7
 L=0.15
 W=0.9
 nf=1
@@ -181,7 +181,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {/home/eamta/skywater/xschem_sky130/sky130_fd_pr/pfet_01v8.sym} 190 -60 0 0 {name=M8
+C {sky130_fd_pr/pfet_01v8.sym} 190 -60 0 0 {name=M8
 L=0.15
 W=0.9
 nf=1
@@ -195,7 +195,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {/home/eamta/skywater/xschem_sky130/sky130_fd_pr/pfet_01v8.sym} -320 -240 0 0 {name=M9
+C {sky130_fd_pr/pfet_01v8.sym} -320 -240 0 0 {name=M9
 L=0.15
 W=0.9
 nf=1
@@ -209,7 +209,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {/home/eamta/skywater/xschem_sky130/sky130_fd_pr/pfet_01v8.sym} 530 -250 0 1 {name=M10
+C {sky130_fd_pr/pfet_01v8.sym} 530 -250 0 1 {name=M10
 L=0.15
 W=0.9
 nf=1
@@ -223,7 +223,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {/home/eamta/skywater/xschem_sky130/sky130_fd_pr/nfet_01v8.sym} -320 -80 0 0 {name=M11
+C {sky130_fd_pr/nfet_01v8.sym} -320 -80 0 0 {name=M11
 L=0.15
 W=0.45
 nf=1 
@@ -237,7 +237,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/eamta/skywater/xschem_sky130/sky130_fd_pr/nfet_01v8.sym} 530 -90 0 1 {name=M12
+C {sky130_fd_pr/nfet_01v8.sym} 530 -90 0 1 {name=M12
 L=0.15
 W=0.45
 nf=1 

@@ -1,0 +1,37 @@
+* NGSPICE file created from mux_2to1_logic.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_L78GGD a_n73_n73# w_n211_n221# a_15_n73# a_n33_33#
+X0 a_15_n73# a_n33_33# a_n73_n73# w_n211_n221# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=420000u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_6RX2PQ VSUBS w_n211_n268# a_15_n48# a_n33_n145# a_n73_n48#
+X0 a_15_n48# a_n33_n145# a_n73_n48# w_n211_n268# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=840000u l=150000u
+.ends
+
+.subckt inverter_min vdd out in vss
+XXM1 vss vss out in sky130_fd_pr__nfet_01v8_L78GGD
+XXM2 vss vdd out in vdd sky130_fd_pr__pfet_01v8_6RX2PQ
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XA7ZMQ VSUBS a_21_142# a_63_n111# a_n87_142# a_n125_n111#
++ w_n263_n330# a_n33_n111#
+X0 a_n33_n111# a_n87_142# a_n125_n111# w_n263_n330# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.11e+06u l=150000u
+X1 a_63_n111# a_21_142# a_n33_n111# w_n263_n330# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.11e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_HAN8QX a_15_n142# a_n33_102# a_n73_n142# w_n211_n290#
+X0 a_15_n142# a_n33_102# a_n73_n142# w_n211_n290# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.11e+06u l=150000u
+.ends
+
+
+* Top level circuit mux_2to1_logic
+
+Xinverter_min_0 inverter_min_0/vdd sel_b sel inverter_min_0/vss inverter_min
+Xsky130_fd_pr__pfet_01v8_XA7ZMQ_0 inverter_min_0/vss sel DinA sel DinA inverter_min_0/vdd
++ out sky130_fd_pr__pfet_01v8_XA7ZMQ
+Xsky130_fd_pr__pfet_01v8_XA7ZMQ_1 inverter_min_0/vss sel_b DinB sel_b DinB inverter_min_0/vdd
++ out sky130_fd_pr__pfet_01v8_XA7ZMQ
+Xsky130_fd_pr__nfet_01v8_HAN8QX_0 out sel_b DinA inverter_min_0/vss sky130_fd_pr__nfet_01v8_HAN8QX
+Xsky130_fd_pr__nfet_01v8_HAN8QX_1 out sel DinB inverter_min_0/vss sky130_fd_pr__nfet_01v8_HAN8QX
+.end
+

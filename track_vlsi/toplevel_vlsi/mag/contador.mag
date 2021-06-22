@@ -1,11 +1,10 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1624338677
+timestamp 1624388555
 << metal1 >>
-rect 7647 1599 7703 1645
-rect 7675 46 7703 1599
-rect 7586 0 7703 46
+rect 7647 1599 7675 1645
+rect 7586 0 7675 46
 << metal2 >>
 rect 355 1571 7727 1599
 rect 2267 1567 2335 1571
@@ -39,7 +38,7 @@ timestamp 1624338677
 transform 1 0 988 0 1 23
 box -67 -23 2436 852
 use xor_somo  xor_somo_0
-timestamp 1624338677
+timestamp 1624384751
 transform 1 0 96 0 1 23
 box -96 -23 990 852
 use dffc_2  dffc_2_2
@@ -51,11 +50,11 @@ timestamp 1624338677
 transform 1 0 4752 0 1 23
 box -67 -23 2436 852
 use xor_somo  xor_somo_3
-timestamp 1624338677
+timestamp 1624384751
 transform -1 0 3881 0 -1 1622
 box -96 -23 990 852
 use xor_somo  xor_somo_1
-timestamp 1624338677
+timestamp 1624384751
 transform 1 0 3860 0 1 23
 box -96 -23 990 852
 use and_somo  and_somo_2
@@ -67,7 +66,7 @@ timestamp 1624338677
 transform 1 0 3383 0 1 23
 box -81 -23 584 852
 use xor_somo  xor_somo_2
-timestamp 1624338677
+timestamp 1624384751
 transform -1 0 7645 0 -1 1622
 box -96 -23 990 852
 use and_somo  and_somo_1
